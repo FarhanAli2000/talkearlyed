@@ -5,6 +5,7 @@ import ClaritySection from "../components/ClaritySection";
 import DecisionHelp from "../components/DecisionHelp";
 import HelpDifference from "../components/HelpDifference";
 import LocalDirectoryCTA from "../components/LocalDirectoryCTA";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <DecisionHelp />
       <HelpDifference />
       <LocalDirectoryCTA />
+      <Footer />
     </main>
   );
 }
