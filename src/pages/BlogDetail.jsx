@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -23,6 +24,11 @@ const articles = {
   "low-sugar-breakfast-ideas-for-kids": {
     title:
       "Low-Sugar Breakfast for Kids: A Delicious and Healthy Start to Their Day",
+    seoTitle: "Low Sugar Breakfast Ideas for Kids That They’ll Love",
+    description:
+      "Tired of sugar-loaded mornings? Discover fun, low-sugar breakfast ideas for kids that boost energy and focus. Learn how to make mornings healthier today!",
+    canonical: "https://talkearlyed.com/low-sugar-breakfast-ideas-for-kids/",
+    url: "https://talkearlyed.com/low-sugar-breakfast-ideas-for-kids/",
     author: "Hajra Abbasi",
     date: "June 17, 2025",
     image: "/images/TED-35.webp",
@@ -96,6 +102,7 @@ const articles = {
             ],
           },
         ],
+        image: "/images/TED-38.webp",
       },
       {
         title: "Smart tips to reduce sugar in breakfast",
@@ -621,6 +628,38 @@ function FullBlogDetail({ article }) {
   );
 }
 
+const setMetaTag = (attribute, value, content) => {
+  if (!content) {
+    return;
+  }
+
+  let tag = document.head.querySelector(`meta[${attribute}="${value}"]`);
+
+  if (!tag) {
+    tag = document.createElement("meta");
+    tag.setAttribute(attribute, value);
+    document.head.appendChild(tag);
+  }
+
+  tag.setAttribute("content", content);
+};
+
+const setCanonical = (href) => {
+  if (!href) {
+    return;
+  }
+
+  let link = document.head.querySelector('link[rel="canonical"]');
+
+  if (!link) {
+    link = document.createElement("link");
+    link.setAttribute("rel", "canonical");
+    document.head.appendChild(link);
+  }
+
+  link.setAttribute("href", href);
+};
+
 function BlogDetail() {
   const route = window.location.hash.replace("#", "");
   const normalizedRoute =
@@ -631,6 +670,23 @@ function BlogDetail() {
       : route;
   const article =
     articles[normalizedRoute] || articles["early-childhood-education-guide"];
+
+  useEffect(() => {
+    const seoTitle = article.seoTitle || article.title;
+    const description = article.description || article.excerpt;
+    const canonical = article.canonical || article.url;
+    const imageUrl = new URL(article.image, window.location.origin).href;
+
+    document.title = seoTitle;
+    setMetaTag("name", "description", description);
+    setCanonical(canonical);
+    setMetaTag("property", "og:type", "article");
+    setMetaTag("property", "og:title", seoTitle);
+    setMetaTag("property", "og:description", description);
+    setMetaTag("property", "og:url", article.url || canonical);
+    setMetaTag("property", "og:image", imageUrl);
+    setMetaTag("name", "twitter:card", "summary_large_image");
+  }, [article]);
 
   if (article.variant === "full") {
     return <FullBlogDetail article={article} />;
