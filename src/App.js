@@ -4,6 +4,7 @@ import About from "./pages/About";
 import BlogDetail from "./pages/BlogDetail";
 import Contact from "./pages/Contact";
 import Parenting from "./pages/Parenting";
+import EarlyEducation from "./pages/EarlyEducation";
 import PreschoolLists from "./pages/PreschoolLists";
 import "./App.css";
 
@@ -48,10 +49,17 @@ function App() {
       <BlogDetail />
     ),
     "positive-parenting-tips-for-children-aged-5-12": <BlogDetail />,
+    "crafts-for-kids": <BlogDetail />,
+    "outdoor-sensory-play-ideas-for-babies-and-toddlers": <BlogDetail />,
+    "indoor-sensory-activities-for-infants-during-rainy-days": <BlogDetail />,
+    "learning-toys-for-4-year-olds": <BlogDetail />,
+    "how-sensory-play-helps-infant-motor-skill-development": <BlogDetail />,
+    "best-educational-toys": <BlogDetail />,
     "how-to-choose-the-right-centers-for-your-child": <BlogDetail />,
     "blog-detail": <BlogDetail />,
     contact: <Contact />,
     parenting: <Parenting />,
+    "early-education": <EarlyEducation />,
     "preschool-lists": <PreschoolLists />,
     "preschools-list": <PreschoolLists />,
   };
