@@ -61,7 +61,8 @@ const posts = [
   {
     title: "Two Positive Parenting Tips for Toddlers (2–3 Years): A Practical Guide",
     meta: "Hajra Abbasi - April 24, 2025",
-    image: "/images/TED-45.webp",
+    image: "/images/TED-45.jpg",
+    href: "#positive-parenting-tips-for-toddlers",
     description:
       "Parenting a toddler is a wild, beautiful adventure. Between ages 2 and 3, your child is bursting with curiosity, testing boundaries, and expressing big emotions—sometimes all at once. It’s normal to feel overwhelmed or wonder if you’re guiding them the right way.",
   },
@@ -69,6 +70,7 @@ const posts = [
     title: "What are two positive parenting tips for middle childhood 6-8 years?",
     meta: "Joseline Martinez - April 14, 2025",
     image: "/images/TED-47.webp",
+    href: "#what-are-two-positive-parenting-tips-for-middle-childhood-6-8-years",
     description:
       "Parenting during middle childhood (6-8 years) is a critical phase where children develop their personalities, navigate friendships, and understand emotions on a deeper level. Without proper guidance, they may struggle with emotional regulation, self-esteem, and peer interactions, leaving parents feeling uncertain and overwhelmed. Miscommunication and frustration can create distance in the parent-child relationship, making it harder to provide the support children need",
   },
@@ -76,6 +78,7 @@ const posts = [
     title: "Building Healthy Snack Habits for Toddlers: Tips for Parents",
     meta: "Hajra Abbasi - February 25, 2025",
     image: "/images/TED-48.webp",
+    href: "#building-healthy-snack-habits-for-toddlers-tips-for-parents",
     description:
       "Snacks play an important role in a child’s overall nutrition, which helps them to bring down the gap between food and support their development and development. The goal is not only to fill them, but also to provide nutrient-dense, balanced options that contribute to their energy, mood and health. But as a parent, can you ensure that you are building these habits correctly?",
   },
@@ -83,6 +86,7 @@ const posts = [
     title: "Practical Tips For Promoting Healthy Eating Habits In Children",
     meta: "Hajra Abbasi - January 10, 2025",
     image: "/images/TED-49.webp",
+    href: "#practical-tips-for-promoting-healthy-eating-habits-in-children",
     description:
       "Getting kids to eat healthy can feel like a mix of small victories and big battles. Between picky eaters and busy schedules, it’s no surprise that parents often wonder, “How do I make this easier?” The good news? Helping children develop healthy eating habits doesn’t have to be a struggle—it can even be fun!",
   },
@@ -90,87 +94,88 @@ const posts = [
     title: "Positive Parenting Tips for Children Aged 5–12",
     meta: "Joseline Martinez - January 10, 2025",
     image: "/images/TED-50.webp",
+    href: "#positive-parenting-tips-for-children-aged-5-12",
     description:
       "Parenting is an incredible journey, full of triumphs, surprises, and those “what do I do now?” moments. The years between 5 and 12 are particularly fascinating as kids start figuring out who they are, testing boundaries, and learning how to navigate the world around them. So how can you guide them through this exciting, sometimes bumpy stage with confidence?",
   },
-  {
-    title: "Tips for a Smooth Transition to Daycare: A Guide for Parents and Guardians",
-    meta: "Joseline Martinez - March 20, 2024",
-    image: "/images/TED-56.webp",
-    description:
-      "Having your kids in a safe and secure daycare makes going to work or school a lot easier on parents and guardians. It’s a difficult process to navigate when it’s your child’s first time in a daycare setting or simply the first time away from you.",
-  },
-  {
-    title: "The Terrible Twos Survival Guide: A Preschool Parent’s Manual",
-    meta: "Joseline Martinez - February 26, 2024",
-    image: "/images/TED-58.webp",
-    description:
-      "Welcome to the world of parenting! This guide is specially crafted for parents navigating the maze of their toddler’s ‘terrible twos.’ It’s an exciting yet challenging time, and we’re here to help you understand and cope with the dynamics of your child’s growth and development.",
-  },
-  {
-    title: "The Impact of Teachers’ Demeanor in Times of Stress: How to Cope and What Parents Should Assess",
-    meta: "Joseline Martinez - February 21, 2024",
-    image: "/images/TED-60.webp",
-    description:
-      "As a parent, dropping off your child at daycare or preschool can be an emotional experience. You want to ensure your little one is in good hands, surrounded by caring and capable individuals who will nurture their growth and well-being.",
-  },
-  {
-    title: "Empathizing the Vital Significance: Understanding Pre-existing Medical Conditions in Preschoolers",
-    meta: "Hajra Abbasi - February 9, 2024",
-    image: "/images/TED-62.webp",
-    description:
-      "Pre-school is a magical time, full of laughter, learning, and boundless curiosity. Yet, for some children, this journey comes with unique challenges. As parents and educators, it’s crucial to recognize and understand the significance of pre-existing medical conditions in preschool-aged children.",
-  },
-  {
-    title: "6 Tips for Teaching Your Child to Use Scissors",
-    meta: "Joseline Martinez - August 11, 2022",
-    image: "/images/blog-default-7.webp",
-    description:
-      "Have you ever noticed that one of the areas our young students need to practice a lot is scissors? I think this is partly due to the fact that many, maybe even most of our students do not use scissors at home.",
-  },
-  {
-    title: "Transforming Playtime: Creative Ways to Make Kids’ Activities Exciting in Childcare and Parenting, Embracing Inclusivity",
-    meta: "Joseline Martinez - August 11, 2022",
-    image: "/images/blog-default-6.webp",
-    description:
-      "Let me tell you that our classes are more than just lessons. It’s a fast-paced, skill-filled time of day that covers just about every area of content we explore.",
-  },
-  {
-    title: "Crafts for Kids That Echo with Childhood Delight",
-    meta: "Joseline Martinez - August 10, 2022",
-    image: "/images/blog-default-3.webp",
-    description:
-      "Kids love to show off their creativity and skills with fun, hands-on crafts throughout the year.",
-  },
-  {
-    title: "Short Vowel Reading Fluency To Build Strong Readers!",
-    meta: "Joseline Martinez - August 10, 2022",
-    image: "/images/blog-default-2.webp",
-    description:
-      "When it comes to reading instruction, reading fluency is the ultimate goal. Fluency is the ability to read text quickly, accurately, and with proper expression.",
-  },
-  {
-    title: "6 Activities Your Kids Will Love",
-    meta: "Hajra Abbasi - August 10, 2022",
-    image: "/images/blog-default-1.webp",
-    description:
-      "Heading into a new year, after a long holiday break, calls for new engaging activities for students!",
-  },
-  {
-    title: "What can tracks teach kids Preschool science is activities are a big deal",
-    meta: "Joseline Martinez - January 8, 2022",
-    image: "/images/blog-single.webp",
-    description:
-      "f architecto asperiores aut repellendus Analyzing competing products or services can give you an idea of what already exists in your industry. This can help you find ways to improve your idea. It can also help you target weaknesses in your product or service before you spend time and money creating it. Be sure to note your competitor’s prices during this process, which will give you a range of how much customers are currently spending on similar products",
-  },
-  {
-    title: "How to Choose the Right Daycare For Your Child",
-    meta: "Hajra Abbasi - April 9, 2021",
-    image: "/images/blog-6.webp",
-    href: "#how-to-choose-the-right-centers-for-your-child",
-    description:
-      "I’ll help you develop a positive relationship with food so you never have to suffer a fad diet ever again. You’ll boost your fitness & energy levels like never before and you’ll learn how to train effectively so you maintain your amazing results long after we’ve worked together.",
-  },
+  // {
+  //   title: "Tips for a Smooth Transition to Daycare: A Guide for Parents and Guardians",
+  //   meta: "Joseline Martinez - March 20, 2024",
+  //   image: "/images/TED-56.webp",
+  //   description:
+  //     "Having your kids in a safe and secure daycare makes going to work or school a lot easier on parents and guardians. It’s a difficult process to navigate when it’s your child’s first time in a daycare setting or simply the first time away from you.",
+  // },
+  // {
+  //   title: "The Terrible Twos Survival Guide: A Preschool Parent’s Manual",
+  //   meta: "Joseline Martinez - February 26, 2024",
+  //   image: "/images/TED-58.webp",
+  //   description:
+  //     "Welcome to the world of parenting! This guide is specially crafted for parents navigating the maze of their toddler’s ‘terrible twos.’ It’s an exciting yet challenging time, and we’re here to help you understand and cope with the dynamics of your child’s growth and development.",
+  // },
+  // {
+  //   title: "The Impact of Teachers’ Demeanor in Times of Stress: How to Cope and What Parents Should Assess",
+  //   meta: "Joseline Martinez - February 21, 2024",
+  //   image: "/images/TED-60.webp",
+  //   description:
+  //     "As a parent, dropping off your child at daycare or preschool can be an emotional experience. You want to ensure your little one is in good hands, surrounded by caring and capable individuals who will nurture their growth and well-being.",
+  // },
+  // {
+  //   title: "Empathizing the Vital Significance: Understanding Pre-existing Medical Conditions in Preschoolers",
+  //   meta: "Hajra Abbasi - February 9, 2024",
+  //   image: "/images/TED-62.webp",
+  //   description:
+  //     "Pre-school is a magical time, full of laughter, learning, and boundless curiosity. Yet, for some children, this journey comes with unique challenges. As parents and educators, it’s crucial to recognize and understand the significance of pre-existing medical conditions in preschool-aged children.",
+  // },
+  // {
+  //   title: "6 Tips for Teaching Your Child to Use Scissors",
+  //   meta: "Joseline Martinez - August 11, 2022",
+  //   image: "/images/blog-default-7.webp",
+  //   description:
+  //     "Have you ever noticed that one of the areas our young students need to practice a lot is scissors? I think this is partly due to the fact that many, maybe even most of our students do not use scissors at home.",
+  // },
+  // {
+  //   title: "Transforming Playtime: Creative Ways to Make Kids’ Activities Exciting in Childcare and Parenting, Embracing Inclusivity",
+  //   meta: "Joseline Martinez - August 11, 2022",
+  //   image: "/images/blog-default-6.webp",
+  //   description:
+  //     "Let me tell you that our classes are more than just lessons. It’s a fast-paced, skill-filled time of day that covers just about every area of content we explore.",
+  // },
+  // {
+  //   title: "Crafts for Kids That Echo with Childhood Delight",
+  //   meta: "Joseline Martinez - August 10, 2022",
+  //   image: "/images/blog-default-3.webp",
+  //   description:
+  //     "Kids love to show off their creativity and skills with fun, hands-on crafts throughout the year.",
+  // },
+  // {
+  //   title: "Short Vowel Reading Fluency To Build Strong Readers!",
+  //   meta: "Joseline Martinez - August 10, 2022",
+  //   image: "/images/blog-default-2.webp",
+  //   description:
+  //     "When it comes to reading instruction, reading fluency is the ultimate goal. Fluency is the ability to read text quickly, accurately, and with proper expression.",
+  // },
+  // {
+  //   title: "6 Activities Your Kids Will Love",
+  //   meta: "Hajra Abbasi - August 10, 2022",
+  //   image: "/images/blog-default-1.webp",
+  //   description:
+  //     "Heading into a new year, after a long holiday break, calls for new engaging activities for students!",
+  // },
+  // {
+  //   title: "What can tracks teach kids Preschool science is activities are a big deal",
+  //   meta: "Joseline Martinez - January 8, 2022",
+  //   image: "/images/blog-single.webp",
+  //   description:
+  //     "f architecto asperiores aut repellendus Analyzing competing products or services can give you an idea of what already exists in your industry. This can help you find ways to improve your idea. It can also help you target weaknesses in your product or service before you spend time and money creating it. Be sure to note your competitor’s prices during this process, which will give you a range of how much customers are currently spending on similar products",
+  // },
+  // {
+  //   title: "How to Choose the Right Daycare For Your Child",
+  //   meta: "Hajra Abbasi - April 9, 2021",
+  //   image: "/images/blog-6.webp",
+  //   href: "#how-to-choose-the-right-centers-for-your-child",
+  //   description:
+  //     "I’ll help you develop a positive relationship with food so you never have to suffer a fad diet ever again. You’ll boost your fitness & energy levels like never before and you’ll learn how to train effectively so you maintain your amazing results long after we’ve worked together.",
+  // },
 ];
 
 const resources = [

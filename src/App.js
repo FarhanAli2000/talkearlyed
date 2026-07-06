@@ -37,6 +37,17 @@ function App() {
     "lunch-ideas-for-picky-eaters": <BlogDetail />,
     "daycare-vs-stay-at-home-guide": <BlogDetail />,
     "first-year-at-daycare-what-to-expect": <BlogDetail />,
+    "positive-parenting-tips-for-toddlers": <BlogDetail />,
+    "what-are-two-positive-parenting-tips-for-middle-childhood-6-8-years": (
+      <BlogDetail />
+    ),
+    "building-healthy-snack-habits-for-toddlers-tips-for-parents": (
+      <BlogDetail />
+    ),
+    "practical-tips-for-promoting-healthy-eating-habits-in-children": (
+      <BlogDetail />
+    ),
+    "positive-parenting-tips-for-children-aged-5-12": <BlogDetail />,
     "how-to-choose-the-right-centers-for-your-child": <BlogDetail />,
     "blog-detail": <BlogDetail />,
     contact: <Contact />,
