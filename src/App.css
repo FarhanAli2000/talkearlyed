@@ -456,6 +456,13 @@ a {
   letter-spacing: 0;
 }
 
+.blog-article__inner > p {
+  margin: 0 0 18px;
+  color: #514b61;
+  font-size: 17px;
+  line-height: 1.78;
+}
+
 .blog-article-section p {
   margin: 0 0 16px;
 }

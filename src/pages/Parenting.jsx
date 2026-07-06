@@ -38,6 +38,7 @@ const posts = [
     title: "Lunch Ideas for Picky Eaters: Creative, Healthy & Kid-Approved Solutions",
     meta: "Hajra Abbasi - June 17, 2025",
     image: "/images/TED-37.webp",
+    href: "#lunch-ideas-for-picky-eaters",
     description:
       "Finding lunch ideas for picky eaters can feel like solving a daily puzzle. From texture issues to taste aversions, many kids resist healthy food, but it's not impossible to win them over. This guide provides nutritious, fun, and easy-to-prepare lunch options tailored to picky eaters, along with practical strategies to encourage better eating habits.",
   },
@@ -45,8 +46,9 @@ const posts = [
     title: "Daycare vs. Stay-at-Home: Which Is Better for Child Development?",
     meta: "Joseline Martinez - May 9, 2025",
     image: "/images/TED-41.webp",
+    href: "#daycare-vs-stay-at-home-guide",
     description:
-      "Being a new parent comes with a mountain of decisions, and figuring out whether to stay home with your child or enroll them in daycare is one of the big ones. It's normal to feel a bit all over the place emotionally. You might feel torn, uncertain, even guilty at times. After all, this choice can shape your child's early social and emotional development, and possibly even their learning down the line.",
+      "Being a new parent comes with a mountain of decisions, and figuring out whether to stay home with your child or enroll them in daycare is one of the big ones. It’s normal to feel a bit all over the place emotionally. You might feel torn, uncertain, even guilty at times. After all, this choice can shape your child’s early social and emotional development, and possibly even their learning down the line.",
   },
 ];
 

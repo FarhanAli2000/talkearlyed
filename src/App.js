@@ -26,6 +26,8 @@ function App() {
     "toddler-lunch-box-ideas-a-complete-guide-for-parents": <BlogDetail />,
     "early-childhood-education-guide": <BlogDetail />,
     "low-sugar-breakfast-ideas-for-kids": <BlogDetail />,
+    "lunch-ideas-for-picky-eaters": <BlogDetail />,
+    "daycare-vs-stay-at-home-guide": <BlogDetail />,
     "blog-detail": <BlogDetail />,
     contact: <Contact />,
     parenting: <Parenting />,

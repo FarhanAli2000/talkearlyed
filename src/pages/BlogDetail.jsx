@@ -183,6 +183,254 @@ const articles = {
       "American Heart Association. Available at: https://www.heart.org/",
     ],
   },
+  "lunch-ideas-for-picky-eaters": {
+    title:
+      "Lunch Ideas for Picky Eaters: Creative, Healthy & Kid-Approved Solutions",
+    seoTitle: "Smart and Simple Lunch Ideas for Picky Eaters That Actually Work",
+    description:
+      "ired of lunchtime battles? Explore fun, healthy lunch ideas even picky eaters will love. Turn mealtime stress into smiles!",
+    canonical: "https://talkearlyed.com/lunch-ideas-for-picky-eaters/",
+    url: "https://talkearlyed.com/lunch-ideas-for-picky-eaters/",
+    author: "Hajra Abbasi",
+    date: "June 17, 2025",
+    image: "/images/TED-37.webp",
+    excerpt:
+      "Finding lunch ideas for picky eaters can feel like solving a daily puzzle. From texture issues to taste aversions, many kids resist healthy food, but it's not impossible to win them over. This guide provides nutritious, fun, and easy-to-prepare lunch options tailored to picky eaters, along with practical strategies to encourage better eating habits.",
+    variant: "full",
+    views: "582 Views",
+    comments: "0 Comment",
+    category: "Parenting & Infants",
+    keySummary:
+      "Finding lunch ideas for picky eaters can feel like solving a daily puzzle. From texture issues to taste aversions, many kids resist healthy food, but it’s not impossible to win them over. This guide provides nutritious, fun, and easy-to-prepare lunch options tailored to picky eaters, along with practical strategies to encourage better eating habits. We also explore why pickiness happens and how caregivers and parents can support healthy child development through lunch choices.",
+    intro: [
+      "If your child sticks to the same three foods or refuses anything green, you’re not alone. For many parents and caregivers, packing lunch for a picky eater feels frustrating and repetitive. It’s easy to worry they’re not getting the nutrition they need—or to feel overwhelmed by constant mealtime battles. Picky eating is often part of normal development, shaped by taste, texture sensitivity, and a desire for control. But with the right mix of creativity and structure, you can turn lunchtime into a positive experience.",
+      "In this guide, you’ll discover why kids are picky, what makes a good lunch, and easy, healthy lunch ideas even selective eaters will enjoy.",
+    ],
+    sections: [
+      {
+        title: "Knowing the Reasons Behind Children's Picky Eating",
+        paragraphs: [
+          "Toddlers and school-aged children are notoriously prone to picky eating. It frequently results from normal developmental phases in which children demonstrate their independence by exercising control over their diet. However, early feeding experiences, family eating habits, and sensory sensitivity (taste, texture, and smell) can also have an impact. A 2022 study that was published in Appetite found that children who have high levels of sensory sensitivity are more likely to refuse particular foods.",
+          "It’s crucial to keep in mind that picky eating is frequently a protective behavior rather than an act of defiance. Particularly between the ages of two and six, children exhibit “neophobia,” or biological caution when it comes to new foods. As highlighted in our blog on 3 Different Approaches to Child Development, This period is crucial for shaping eating behaviors, which is why understanding the root cause of pickiness can help guide the right strategy.",
+        ],
+      },
+      {
+        title: "What Makes a Good Lunch for a Picky Eater?",
+        paragraphs: [
+          "Lunches for picky eaters should be",
+        ],
+        bullets: [
+          "Visually appealing",
+          "Familiar yet gently introduce new textures",
+          "Easy to handle and eat independently",
+          "Customizable",
+          "Balanced nutritionally (protein + carbs + fiber + healthy fats)",
+        ],
+        subSections: [
+          {
+            title: "Key Characteristics",
+            paragraphs: [
+              "A successful lunch often includes a mix of preferred items and one “learning” food—something new or slightly outside their comfort zone. According to HealthyChildren.org, this slow exposure helps expand food variety over time.",
+            ],
+            bullets: [
+              "Colorful foods: Add visual variety",
+              "Simple ingredients: Avoid overly spiced or complex dishes",
+              "Bite-sized portions: Less overwhelming",
+              "Dip-friendly items: Add interactive elements like hummus, yogurt, or ranch",
+            ],
+          },
+        ],
+        image: "/images/TED-39.webp",
+      },
+      {
+        title: "10 Creative and Healthy Lunch Ideas for Picky Eaters",
+        paragraphs: [
+          "Kids love building their lunch, and they have control over doing so, so they’re more likely to eat it. You can choose to set the art in a compartment lunchbox for a nicer presentation.",
+        ],
+        bullets: [
+          "Whole-grain crackers",
+          "Turkey or chicken slices",
+          "Cheese cubes",
+          "Apple slices",
+          "Mini cookie or yogurt",
+        ],
+        subSections: [
+          {
+            title: "2. Mini Quesadilla Triangles",
+            bullets: [
+              "Whole wheat tortilla",
+              "Melted cheese & beans or pulled chicken",
+              "Avocado or salsa for dipping",
+              "Grapes or banana slices",
+            ],
+          },
+          {
+            title: "3. Pasta Salad bento",
+            bullets: [
+              "Simply or hardly seasoned pasta",
+              "Shredded carrots, cucumbers",
+              "Cubed chicken or chickpeas",
+              "Vinaigrette or ranch on the side",
+            ],
+          },
+          {
+            title: "4. Mini Pancake Sandwiches",
+            bullets: [
+              "Whole-grain mini pancakes",
+              "Peanut butter or cream cheese",
+              "Thin slices of banana or strawberry between them",
+            ],
+          },
+          {
+            title: "5. Rainbow skewers",
+            bullets: [
+              "Cubed cheese",
+              "Cherry tomatoes",
+              "Cucumbers",
+              "Watermelon or grapes (Just use those blunted plastic skewers or sticks)",
+            ],
+          },
+          {
+            title: "6. Breakfast -for-lunch Box",
+            bullets: [
+              "An egg, hard-boiled or egg muffins",
+              "Mini waffles",
+              "Apple slices with cinnamon",
+              "Yogurt pouch",
+            ],
+          },
+          {
+            title: "7. Mac & Cheese Muffins",
+            bullets: [
+              "Mac and cheese, made from scratch or from a box",
+              "Baked in muffin pans for a perfect portion size",
+              "Dip with apple chips or baby carrots",
+            ],
+          },
+          {
+            title: "8. Rice and Veggie Balls",
+            bullets: [
+              "Gluey rice salad with peas and corn",
+              "Rolled or scooped into balls or pressed into silicone molds",
+              "Soy sauce or ketchup side dip",
+            ],
+          },
+          {
+            title: "9. Smoothie Jar Lunch",
+            bullets: [
+              "Sealed jar of any protein smoothie",
+              "Sides: graham crackers, cheese strings, apple slices",
+            ],
+          },
+          {
+            title: "10. Mini Bagel Pizza",
+            bullets: [
+              "Mini bagel halves",
+              "Pizza sauce and mozzarella",
+              "Baked and cooled for lunchbox",
+              "Served with cucumber or celery slices",
+            ],
+          },
+        ],
+        image: "/images/TED-40.webp",
+      },
+      {
+        title: "Lunch-packing tips that help encourage food",
+        paragraphs: [
+          "Parents and careful care play a big role in shaping the experiences of eating. Some suggestions have been made to increase the success of lunch:",
+        ],
+        bullets: [
+          "Use Bento-style boxes to separate foods and increase visual appeal.",
+          "Add a fun napkin or lunch note—a little emotional touch may encourage children to eat.",
+          "Avoid heavy parts; small amounts are less.",
+          "Provide limited but real option (e.g., “Will you like carrot or apple slices?”)",
+          "Rotate foods to avoid boredom by keeping some favorites on repeat.",
+        ],
+        subSections: [
+          {
+            title: "Food routine and stability",
+            paragraphs: [
+              "Many of these tips align with strategies mentioned in our post on practical suggestions to promote healthy eating habits in children, which provides more guidance for food routine and stability.",
+            ],
+          },
+        ],
+      },
+      {
+        title: "How to encourage healthy eating habits",
+        paragraphs: [
+          "Supporting a picker does not stop at lunch—it is part of a holistic approach to food. Reinforcement and gentle performance go a long way.",
+        ],
+        subSections: [
+          {
+            title: "Strategies include",
+            bullets: [
+              "Eating healthy at home",
+              "Creating a cool and approximate food",
+              "Celebrating a small victory (“You tried to bite today—terrible!”)",
+              "Repeated for new foods, low exposure",
+            ],
+            afterParagraphs: [
+              "According to the CDC’s guide on Child Nutrition, it may take 10–15 exposures for a child to accept a new food. Pairing these exposures with positive reinforcement is key.",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Accessories: Table of child-friendly material",
+        table: {
+          headers: ["Food Group", "Safe Picks for Picky Eaters", "Introduce Slowly"],
+          rows: [
+            ["Fruits", "Bananas, apples, grapes", "Mango, kiwi"],
+            ["Veggies", "Baby carrots, cucumbers, sweet corn", "Bell peppers, spinach"],
+            ["Proteins", "Chicken, cheese, eggs", "Tuna, hummus"],
+            ["Grains", "Whole grain bread, pasta, crackers", "Quinoa, brown rice"],
+            ["Dairy/Alternatives", "Yogurt, milk, cheese sticks", "Greek yogurt, cottage cheese"],
+          ],
+        },
+      },
+    ],
+    faqs: [
+      {
+        question: "How do I get my child to try new foods at lunch?",
+        answer:
+          "Start with one familiar and one “learning” item per meal. Use dips and sauces to make new items more appealing.",
+      },
+      {
+        question: "What if my child only eats the same few foods?",
+        answer:
+          "Keep offering new foods without pressure. Familiarity and repetition help—don’t remove their preferred items, just add to the variety slowly.",
+      },
+      {
+        question: "Are sweet treats okay for picky eaters?",
+        answer:
+          "Yes—in moderation. Including a mini cookie or a chocolate chip adds fun without compromising nutrition.",
+      },
+    ],
+    finalThoughts: [
+      "Feeding picky eaters doesn’t have to be frustrating—it just requires strategy, creativity, and patience. By combining nutritious elements with visual appeal, familiar textures, and playful presentation, you can turn even hesitant eaters into lunchtime champions.",
+    ],
+    references: [
+      "http://HealthyChildren.org",
+      "https://www.sciencedirect.com/science/article/abs/pii/S0195666322001854",
+    ],
+  },
+  "daycare-vs-stay-at-home-guide": {
+    title: "Daycare vs. Stay-at-Home: Which Is Better for Child Development?",
+    seoTitle: "Daycare vs. Stay-at-Home: Child Development Guide",
+    description:
+      "Explore how daycare compares to stay-at-home parenting in child development. Discover pros, cons, and research-backed tips. Make the best choice today!",
+    canonical: "https://talkearlyed.com/daycare-vs-stay-at-home-guide/",
+    url: "https://talkearlyed.com/daycare-vs-stay-at-home-guide/",
+    author: "Joseline Martinez",
+    date: "May 9, 2025",
+    image: "/images/TED-41.webp",
+    excerpt:
+      "Being a new parent comes with a mountain of decisions, and figuring out whether to stay home with your child or enroll them in daycare is one of the big ones. It’s normal to feel a bit all over the place emotionally. You might feel torn, uncertain, even guilty at times. After all, this choice can shape your child’s early social and emotional development, and possibly even their learning down the line.",
+    variant: "large",
+    views: "708 Views",
+    comments: "0 Comment",
+    category: "Parenting & Infants",
+  },
   "advice-for-new-moms-complete-postpartum-survival-recovery-guide": {
     title:
       "Essential Advice for New Moms: A Comprehensive Guide to Navigating Early Motherhood",
@@ -715,6 +963,17 @@ function BlogDetail() {
       {article.sections && (
         <section className="blog-article">
           <div className="blog-article__inner">
+            {article.keySummary && (
+              <div className="blog-key-summary">
+                <h2>Key Summary</h2>
+                <p>{article.keySummary}</p>
+              </div>
+            )}
+
+            {article.intro?.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+
             {article.sections.map((section) => (
               <ArticleSection section={section} key={section.title} />
             ))}
