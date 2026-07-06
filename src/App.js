@@ -14,9 +14,17 @@ function App() {
   useEffect(() => {
     const handleHashChange = () => setRoute(getRoute());
 
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+
     window.addEventListener("hashchange", handleHashChange);
     return () => window.removeEventListener("hashchange", handleHashChange);
   }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [route]);
 
   const pages = {
     about: <About />,
@@ -28,6 +36,8 @@ function App() {
     "low-sugar-breakfast-ideas-for-kids": <BlogDetail />,
     "lunch-ideas-for-picky-eaters": <BlogDetail />,
     "daycare-vs-stay-at-home-guide": <BlogDetail />,
+    "first-year-at-daycare-what-to-expect": <BlogDetail />,
+    "how-to-choose-the-right-centers-for-your-child": <BlogDetail />,
     "blog-detail": <BlogDetail />,
     contact: <Contact />,
     parenting: <Parenting />,
