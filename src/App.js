@@ -6,6 +6,8 @@ import Contact from "./pages/Contact";
 import Parenting from "./pages/Parenting";
 import EarlyEducation from "./pages/EarlyEducation";
 import PreschoolLists from "./pages/PreschoolLists";
+import LosAngelesResources from "./pages/LosAngelesResources";
+import SpecialNeeds from "./pages/SpecialNeeds";
 import "./App.css";
 
 function App() {
@@ -58,8 +60,10 @@ function App() {
     "how-to-choose-the-right-centers-for-your-child": <BlogDetail />,
     "blog-detail": <BlogDetail />,
     contact: <Contact />,
+    "los-angeles-resources": <LosAngelesResources />,
     parenting: <Parenting />,
     "early-education": <EarlyEducation />,
+    "special-needs": <SpecialNeeds />,
     "preschool-lists": <PreschoolLists />,
     "preschools-list": <PreschoolLists />,
   };
