@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const navItems = [
   { label: "Home", href: "#home" },
   { label: "Parenting", href: "#parenting" },
@@ -9,12 +11,14 @@ const navItems = [
     href: "#los-angeles-resources",
     children: [{ label: "Preschool Lists", href: "#preschool-lists" }],
   },
-  { label: "About", href: "#about" },
   { label: "Recommendations", href: "#recommendations" },
-  { label: "Contact", href: "#contact" },
 ];
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <header className="site-header">
       <div className="site-header__inner">
@@ -26,10 +30,27 @@ function Header() {
           />
         </a>
 
-        <nav className="main-nav" aria-label="Main navigation">
+        <button
+          type="button"
+          className="site-header__menu-toggle"
+          aria-expanded={menuOpen}
+          aria-controls="main-nav"
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          onClick={() => setMenuOpen((open) => !open)}
+        >
+          <span className="site-header__menu-bar" aria-hidden="true" />
+          <span className="site-header__menu-bar" aria-hidden="true" />
+          <span className="site-header__menu-bar" aria-hidden="true" />
+        </button>
+
+        <nav
+          id="main-nav"
+          className={`main-nav${menuOpen ? " main-nav--open" : ""}`}
+          aria-label="Main navigation"
+        >
           {navItems.map((item) => (
             <div className="main-nav__item" key={item.label}>
-              <a className="main-nav__link" href={item.href}>
+              <a className="main-nav__link" href={item.href} onClick={closeMenu}>
                 {item.label}
                 {item.children && (
                   <span className="main-nav__chevron" aria-hidden="true" />
@@ -43,6 +64,7 @@ function Header() {
                       className="main-nav__dropdown-link"
                       href={child.href}
                       key={child.label}
+                      onClick={closeMenu}
                     >
                       {child.label}
                     </a>

@@ -185,11 +185,31 @@ const resources = [
 ];
 
 const faqs = [
-  "How does Lorem work?",
-  "Who can apply for the loan?",
-  "How much can I apply for?",
-  "How quickly can I get a loan?",
-  "What is the repayment term of my loan?",
+  {
+    question: "What parenting resources can I find on TalkEarlyEd?",
+    answer:
+      "You'll discover expert-backed articles on child development, preschool readiness, behavior, routines, emotional wellness, learning through play, and practical parenting strategies designed to support families through every stage of early childhood.",
+  },
+  {
+    question: "Who are these parenting resources designed for?",
+    answer:
+      "Our resources are created for parents, caregivers, and families raising young children, from infants and toddlers to preschoolers and children preparing for kindergarten, especially those living in Los Angeles and surrounding communities.",
+  },
+  {
+    question: "How can these parenting guides help my family?",
+    answer:
+      "Parenting comes with countless questions. Our guides simplify complex topics into practical, easy-to-follow advice, helping you make confident decisions while supporting your child's learning, development, and emotional well-being.",
+  },
+  {
+    question: "Are your parenting articles based on trusted information?",
+    answer:
+      "Yes. Every resource is carefully developed using trusted educational research, early childhood best practices, and expert insights to provide reliable, family-friendly guidance you can feel confident using at home.",
+  },
+  {
+    question: "Why does TalkEarlyEd focus on Los Angeles families?",
+    answer:
+      "Every community has unique schools, programs, and resources. By focusing on Los Angeles, we provide locally relevant guidance, educational information, and community resources that help families connect with the support available right where they live.",
+  },
 ];
 
 function Parenting() {
@@ -204,16 +224,17 @@ function Parenting() {
         <div className="parenting-hero__overlay" />
         <div className="parenting-hero__content">
           <div className="parenting-hero__eyebrow-wrap">
-            <p>Early education, made simple for L.A families</p>
+            <p>Parent Guides</p>
             <img src="/images/Layer_1-2.png" alt="" aria-hidden="true" />
           </div>
           <h1>
-            Helping Los Angeles <span>Early Childhood</span>
+            <span className="parenting-hero__title-main">
+              Trusted Parenting Guidance
+            </span>{" "}
+            <span className="parenting-hero__title-accent">for Every Family.</span>
           </h1>
           <p className="parenting-hero__copy">
-            From your first preschool tour to your child's first words, we help
-            you find the right early-education support near you, written for
-            parents across Los Angeles
+          From toddler tantrums to preschool readiness, find trusted parenting advice, practical checklists, and expert guidance that helps you navigate every milestone with confidence
           </p>
         </div>
         <img
@@ -299,13 +320,9 @@ function Parenting() {
 
           <div className="faq-list">
             {faqs.map((faq, index) => (
-              <details className="faq-item" key={faq} open={index === 0}>
-                <summary>{faq}</summary>
-                <p>
-                  We are a free loan broker who will compete for you with the
-                  loan offers sent by banks. Just fill in the loan application
-                  form and we will send it to several banks.
-                </p>
+              <details className="faq-item" key={faq.question} open={index === 0}>
+                <summary>{faq.question}</summary>
+                <p>{faq.answer}</p>
               </details>
             ))}
           </div>

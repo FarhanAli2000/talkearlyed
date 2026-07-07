@@ -36,11 +36,31 @@ const resources = [
 ];
 
 const faqs = [
-  "How does Lorem work?",
-  "Who can apply for the loan?",
-  "How much can I apply for?",
-  "How quickly can I get a loan?",
-  "What is the repayment term of my loan?",
+  {
+    question: "What is early childhood education?",
+    answer:
+      "Early childhood education focuses on helping children develop essential cognitive, social, emotional, and communication skills during their most important years of growth.",
+  },
+  {
+    question: "When should my child start preschool?",
+    answer:
+      "Every child is different, but many children begin preschool between the ages of 3 and 4, depending on their developmental readiness and family goals.",
+  },
+  {
+    question: "What is Transitional Kindergarten (TK)?",
+    answer:
+      "Transitional Kindergarten is California's bridge between preschool and kindergarten, giving eligible children an extra year to build confidence and foundational learning skills.",
+  },
+  {
+    question: "How can I support learning at home?",
+    answer:
+      "Reading together, encouraging curiosity, engaging in hands-on activities, and maintaining consistent routines all help reinforce early learning.",
+  },
+  {
+    question: "Why is early education so important?",
+    answer:
+      "High-quality early education helps children develop confidence, independence, problem-solving abilities, and the foundational skills they need for long-term academic success.",
+  },
 ];
 
 function EarlyEducation() {
@@ -55,16 +75,20 @@ function EarlyEducation() {
         <div className="parenting-hero__overlay" />
         <div className="parenting-hero__content">
           <div className="parenting-hero__eyebrow-wrap">
-            <p>Early education, made simple for L.A families</p>
+            <p>Early Education Guide</p>
             <img src="/images/Layer_1-2.png" alt="" aria-hidden="true" />
           </div>
           <h1>
-            Helping Los Angeles <span>Early Education</span>
+            <span className="parenting-hero__title-main">Building Bright Futures</span>{" "}
+            <span className="parenting-hero__title-accent">
+              Starts with Early Learning
+            </span>
           </h1>
           <p className="parenting-hero__copy">
-            From sensory play to creative crafts and learning toys, we help you
-            find fun, developmentally rich activities for babies, toddlers, and
-            preschoolers across Los Angeles
+            Every great learning journey begins with the right foundation.
+            Discover expert guidance, school readiness resources, and practical
+            tools to help your child grow with confidence, from preschool
+            through kindergarten and beyond
           </p>
         </div>
         <img
@@ -150,13 +174,9 @@ function EarlyEducation() {
 
           <div className="faq-list">
             {faqs.map((faq, index) => (
-              <details className="faq-item" key={faq} open={index === 0}>
-                <summary>{faq}</summary>
-                <p>
-                  We are a free loan broker who will compete for you with the
-                  loan offers sent by banks. Just fill in the loan application
-                  form and we will send it to several banks.
-                </p>
+              <details className="faq-item" key={faq.question} open={index === 0}>
+                <summary>{faq.question}</summary>
+                <p>{faq.answer}</p>
               </details>
             ))}
           </div>

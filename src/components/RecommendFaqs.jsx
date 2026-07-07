@@ -1,13 +1,30 @@
 const faqs = [
-  "How does Lorem work?",
-  "Who can apply for the loan?",
-  "How much can I apply for?",
-  "How quickly can I get a loan?",
-  "What is the repayment term of my loan?",
+  {
+    question: "How are products selected?",
+    answer:
+      "We recommend products based on educational value, safety, durability, expert guidance, and real parent feedback.",
+  },
+  {
+    question: "Are these recommendations age-specific?",
+    answer:
+      "Yes. Many of our recommendations are organized by age, developmental stage, and learning goals.",
+  },
+  {
+    question: "Do you recommend toys for children with special needs?",
+    answer:
+      "Absolutely. You'll find sensory toys, communication tools, adaptive learning resources, and products designed for diverse developmental needs.",
+  },
+  {
+    question: "Are these products reviewed by experts?",
+    answer:
+      "Our recommendations are based on trusted educational research, child development principles, and practical family experiences.",
+  },
+  {
+    question: "Can I find gift ideas for different ages?",
+    answer:
+      "Yes. Explore curated gift guides and educational recommendations for babies, toddlers, preschoolers, and school-age children.",
+  },
 ];
-
-const faqAnswer =
-  "We are a free loan broker who will compete for you with the loan offers sent by banks. Just fill in the loan application form and we will send it to several banks. You can then compare the loan offers you receive on your own website and sign the contract!";
 
 function RecommendFaqs() {
   return (
@@ -22,9 +39,9 @@ function RecommendFaqs() {
 
         <div className="faq-list">
           {faqs.map((faq, index) => (
-            <details className="faq-item" key={faq} open={index === 0}>
-              <summary>{faq}</summary>
-              <p>{faqAnswer}</p>
+            <details className="faq-item" key={faq.question} open={index === 0}>
+              <summary>{faq.question}</summary>
+              <p>{faq.answer}</p>
             </details>
           ))}
         </div>

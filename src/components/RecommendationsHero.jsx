@@ -2,15 +2,13 @@ function RecommendationsHero() {
   return (
     <section
       className="about-hero recommendations-hero"
-      style={{ backgroundImage: 'url("/images/girl3.png")' }}
+      style={{ backgroundImage: 'url("/images/girl1.png")' }}
     >
       <div className="about-hero__overlay" />
 
       <div className="about-hero__content">
         <div className="about-hero__eyebrow-wrap">
-          <p className="about-hero__eyebrow">
-            Early education, made simple for LA families
-          </p>
+          <p className="about-hero__eyebrow">Parent-Tested Favorites</p>
           <img
             className="about-hero__underline"
             src="/images/Layer_1-2.png"
@@ -20,13 +18,12 @@ function RecommendationsHero() {
         </div>
 
         <h1 className="about-hero__title">
-          Best <span>Recommendations</span>
+          The Best Picks for <span>Growing Minds</span>
         </h1>
 
         <p className="about-hero__copy">
-          From your first preschool tour to your child's first words, we help
-          you find the right early-education support near you, written for
-          parents across Los Angeles
+          Carefully selected toys, books, learning tools, and everyday
+          essentials that inspire curiosity, creativity, and confident learning.
         </p>
       </div>
 

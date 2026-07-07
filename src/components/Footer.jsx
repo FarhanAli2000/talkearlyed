@@ -2,62 +2,73 @@ const footerColumns = [
   {
     title: "Resources",
     links: [
-      "Find a Preschool",
-      "Find a Daycare",
-      "Speech Therapy Resources",
-      "Autism Resources",
-      "Summer Camps",
+      { label: "Find a Preschool", href: "#preschool-lists" },
+      { label: "Find a Daycare", href: "#los-angeles-resources" },
+      { label: "Speech Therapy Resources", href: "#special-needs" },
+      { label: "Autism Resources", href: "#special-needs" },
+      { label: "Summer Camps", href: "#recommendations" },
     ],
   },
   {
     title: "Popular Guides",
     links: [
-      "Universal TK Guide",
-      "KG Readiness Checklist",
-      "Preschool Cost Guide",
-      "Preschool vs TK",
+      { label: "Universal TK Guide", href: "#early-education" },
+      { label: "KG Readiness Checklist", href: "#child-development" },
+      { label: "Preschool Cost Guide", href: "#parenting" },
+      { label: "Preschool vs TK", href: "#early-education" },
     ],
   },
   {
     title: "Meet the Authors",
     links: [
-      "Hajra Abbassi",
-      "Joseline Martinez",
-      "Daniela Morales",
-      "Maddie Win",
+      { label: "Meet Hajra Abbasi", href: "#hajra-abbasi" },
+      { label: "Meet Joseline Martinez", href: "#joseline-martinez" },
+      { label: "Meet Daniela Lopez", href: "#daniela-morales" },
+      { label: "Meet Maddie Win", href: "#maddie-win" },
     ],
   },
   {
-    title: "Locations",
+    title: "Useful Links",
     links: [
-      "Pasadena",
-      "Santa Monica",
-      "Silver Lake",
-      "South Bay",
-      "San Fernando Valley",
+      { label: "About Us", href: "#about" },
+      { label: "Contact Us", href: "#contact" },
+      { label: "Cookies Policy", href: "#cookies-policy" },
+      { label: "Disclaimer", href: "#disclaimer" },
+      { label: "Privacy Policy", href: "#privacy" },
+      { label: "Terms and Conditions", href: "#terms" },
     ],
   },
 ];
 
 const socialLinks = [
   {
-    label: "X",
-    href: "#x",
-    icon: "/images/logo-twitter%202.svg",
-  },
-  {
     label: "Facebook",
-    href: "#facebook",
+    href: "https://www.facebook.com/profile.php?id=61586511214196",
     icon: "/images/logo-twitter%202.png",
   },
   {
-    label: "Instagram",
-    href: "#instagram",
+    label: "Medium",
+    href: "https://medium.com/@talkearlyed",
     icon: "/images/logo-twitter%202%20(1).png",
   },
   {
-    label: "LinkedIn",
-    href: "#linkedin",
+    label: "TikTok",
+    href: "https://www.tiktok.com/@talkearlyed?lang=en-GB",
+    icon: "/images/logo-twitter%202%20(1).svg",
+  },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/talkearlyed3/",
+    icon: "/images/logo-twitter%202.svg",
+  },
+  {
+    label: "Pinterest",
+    href: "https://www.pinterest.com/talkearlyed/",
+    icon: "/images/logo-twitter%202%20(1).png",
+  },
+  {
+    label: "Reddit",
+    href: "https://www.reddit.com/user/Due-Needleworker4605/",
     icon: "/images/logo-twitter%202%20(1).svg",
   },
 ];
@@ -109,10 +120,8 @@ function Footer() {
               <h2>{column.title}</h2>
               <ul>
                 {column.links.map((link) => (
-                  <li key={link}>
-                    <a href={`#${link.toLowerCase().replaceAll(" ", "-")}`}>
-                      {link}
-                    </a>
+                  <li key={link.label}>
+                    <a href={link.href}>{link.label}</a>
                   </li>
                 ))}
               </ul>
@@ -123,7 +132,13 @@ function Footer() {
         <div className="site-footer__bottom">
           <div className="site-footer__social" aria-label="Social links">
             {socialLinks.map((link) => (
-              <a href={link.href} aria-label={link.label} key={link.label}>
+              <a
+                href={link.href}
+                aria-label={link.label}
+                key={link.label}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={link.icon} alt="" aria-hidden="true" />
               </a>
             ))}
@@ -132,6 +147,8 @@ function Footer() {
           <p>2026 Talk Early Ed. All rights reserved.</p>
 
           <div className="site-footer__legal">
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
             <a href="#terms">Terms &amp; Conditions</a>
             <a href="#privacy">Privacy Policy</a>
           </div>

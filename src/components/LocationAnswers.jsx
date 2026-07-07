@@ -5,6 +5,10 @@ const neighborhoods = [
   "Echo Park",
   "South Bay",
   "San Fernando Valley",
+  "Glendale",
+  "Burbank",
+  "Culver City",
+  "West LA",
 ];
 
 function LocationAnswers() {

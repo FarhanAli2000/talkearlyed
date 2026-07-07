@@ -46,11 +46,31 @@ const resources = [
 ];
 
 const faqs = [
-  "How does Lorem work?",
-  "Who can apply for the loan?",
-  "How much can I apply for?",
-  "How quickly can I get a loan?",
-  "What is the repayment term of my loan?",
+  {
+    question: "How do I know if my child is developing on track?",
+    answer:
+      "Every child develops at their own pace. Milestones are helpful guides, not deadlines. Our resources help you understand what to expect at every stage.",
+  },
+  {
+    question: "What's the best way to encourage healthy development?",
+    answer:
+      "Talk, read, play, explore, and spend quality time together. Small everyday interactions have a lasting impact on your child's growth.",
+  },
+  {
+    question: "Should I worry if my child reaches milestones later than others?",
+    answer:
+      "Not always. Every child learns differently, but if something doesn't feel right, seeking professional guidance can provide clarity and peace of mind.",
+  },
+  {
+    question: "Why is play so important?",
+    answer:
+      "Play is how children discover the world. It builds confidence, creativity, communication, and problem-solving skills—all while having fun.",
+  },
+  {
+    question: "Where can I find trusted child development resources?",
+    answer:
+      "TalkEarlyEd brings together expert-backed articles, practical tools, and helpful guidance to support your child's journey from infancy through the early years.",
+  },
 ];
 
 function ChildDevelopment() {
@@ -65,16 +85,14 @@ function ChildDevelopment() {
         <div className="parenting-hero__overlay" />
         <div className="parenting-hero__content">
           <div className="parenting-hero__eyebrow-wrap">
-            <p>Child development, made simple for L.A families</p>
+            <p>Child Development Guide</p>
             <img src="/images/Layer_1-2.png" alt="" aria-hidden="true" />
           </div>
           <h1>
-            Helping Los Angeles <span>Child Development</span>
+          Little Moments Today. <span>Big Milestones Tomorrow.</span>
           </h1>
           <p className="parenting-hero__copy">
-            From sensory play to learning toys, we help you understand how
-            children grow, learn, and thrive through every stage of early
-            development across Los Angeles
+          Every giggle, every new word, and every first step is part of an incredible journey. Explore trusted guidance that helps you understand, support, and celebrate your child's development with confidence.
           </p>
         </div>
         <img
@@ -160,13 +178,9 @@ function ChildDevelopment() {
 
           <div className="faq-list">
             {faqs.map((faq, index) => (
-              <details className="faq-item" key={faq} open={index === 0}>
-                <summary>{faq}</summary>
-                <p>
-                  We are a free loan broker who will compete for you with the
-                  loan offers sent by banks. Just fill in the loan application
-                  form and we will send it to several banks.
-                </p>
+              <details className="faq-item" key={faq.question} open={index === 0}>
+                <summary>{faq.question}</summary>
+                <p>{faq.answer}</p>
               </details>
             ))}
           </div>
