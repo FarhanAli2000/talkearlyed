@@ -3502,7 +3502,7 @@ const articles = {
             [
               {
                 text: "Fun and Developmental Activities for Your 3-Month-Old Infant",
-                href: "https://talkearlyed.com/fun-and-developmental-activities-for-your-3-month-old-infant/",
+                href: "#fun-and-developmental-activities-for-your-3-month-old-infant",
               },
             ]
           ),
@@ -5041,6 +5041,508 @@ const articles = {
       cite: "L.R. Knost",
     },
   },
+  "autism-chewing-toys-why-kids-chew-and-the-best-safe-options": {
+    title:
+      "Autism Chewing Toys: Why Kids Chew and the Best Safe Options",
+    seoTitle: "Autism Chewing Toys: Best Chewable Sensory Tools for Kids",
+    ogTitle: "Autism Chewing Toys: Best Chewable Sensory Tools for Kids",
+    description:
+      "Discover the best autism chewing toys for kids. Learn why children with autism chew, what to look for in safe chewable sensory tools, and top recommendations.",
+    ogDescription:
+      "Discover the best autism chewing toys for kids. Learn why children with autism chew, what to look for in safe chewable sensory tools, and top recommendations.",
+    canonical:
+      "https://talkearlyed.com/autism-chewing-toys-why-kids-chew-and-the-best-safe-options/",
+    url: "https://talkearlyed.com/autism-chewing-toys-why-kids-chew-and-the-best-safe-options/",
+    ogUrl:
+      "https://talkearlyed.com/autism-chewing-toys-why-kids-chew-and-the-best-safe-options/",
+    author: "Maddie Win",
+    date: "May 11, 2026",
+    image: "/images/toy1.webp",
+    excerpt:
+      "Chewing is a common sensory-seeking behaviour in children with autism; it provides oral sensory input that helps the nervous system regulate.",
+    variant: "full",
+    views: "1781 Views",
+    comments: "0 Comment",
+    category: "Toys",
+    keySummary:
+      "Chewing is a common sensory-seeking behaviour in children with autism; it provides oral sensory input that helps the nervous system regulate.",
+    intro: [
+      "Autism chewing toys (also called chewelry or chew tools) offer a safe, durable, and socially appropriate alternative to chewing on clothing, furniture, or non-food items. Choosing the right chew toy depends on the child's age, chewing intensity, and specific sensory needs. Always prioritise food-grade silicone materials and age-appropriate designs.",
+      "If your child with autism frequently chews on their shirt collar, pencils, fingers, or any object within reach, you are not alone. Chewing is one of the most common sensory-seeking behaviours seen in children on the autism spectrum, and it serves a very real neurological purpose. Rather than trying to stop the behaviour entirely, many occupational therapists and early childhood specialists recommend redirecting it, and that is exactly where autism chewing toys come in.",
+      linkedText(
+        "This guide explains why children with autism chew, what makes a chewing toy safe and effective, and which options are best suited to different ages and chewing intensities. For a broader look at sensory tools for children with autism, see our guide on sensory toys for autism.",
+        [
+          {
+            text: "sensory toys for autism",
+            href: "https://talkearlyed.com/sensory-activities-for-infants/",
+          },
+        ]
+      ),
+    ],
+    sections: [
+      {
+        title: "Why Do Children with Autism Chew?",
+        paragraphs: [
+          "Chewing is an oral sensory behaviour rooted in the nervous system's need for proprioceptive input, the deep pressure feedback that comes from the muscles and joints of the jaw. For many children with autism, the sensory processing system works differently. Chewing provides a calming, regulating input that helps the brain manage sensory overload, anxiety, stress, or simply the need for stimulation.",
+          "According to occupational therapists, oral sensory seeking through chewing is particularly common in children who are sensory-seeking (actively looking for more input) as opposed to sensory-avoiding (withdrawing from input). It is not a behavioural problem — it is the child's nervous system communicating a need.",
+          "Common triggers for increased chewing include transitions between activities, loud or overstimulating environments, times of emotional stress or excitement, and periods of intense concentration. Understanding these triggers helps parents and caregivers use chewing tools proactively rather than reactively.",
+        ],
+        image: "/images/chewtoy.webp",
+      },
+      {
+        title: "What to Look for in an Autism Chewing Toy",
+        subSections: [
+          {
+            title: "1. Food-Grade Silicone Material",
+            paragraphs: [
+              "Safety is non-negotiable. The best autism chewing toys are made from 100% food-grade silicone, the same material used in baby teethers and medical equipment. This means they are free of BPA, phthalates, PVC, and latex. Always verify the material certification before purchasing, especially for younger children.",
+            ],
+          },
+          {
+            title: "2. Chewing Intensity Rating",
+            paragraphs: [
+              "Chewing toys come in different durability levels designed for light, moderate, and heavy chewers. A child who chews lightly can use a softer, more pliable toy, while a child who bites with significant force needs a firmer, more durable option. Using a toy that is too soft for an intense chewer creates a choking hazard if pieces break off.",
+            ],
+            image: "/images/softtoy1-768x388.webp",
+          },
+          {
+            title: "3. Age-Appropriate Design",
+            paragraphs: [
+              "For younger children (2 to 5 years), pendant-style or wearable chew toys that attach to clothing or wrists keep the tool accessible without creating a distraction. For school-age children, pencil toppers and discreet necklace designs allow the child to use the tool in classroom settings without drawing attention.",
+            ],
+          },
+          {
+            title: "4. Easy to Clean",
+            paragraphs: [
+              "Chewing toys are used frequently and need to be cleaned regularly. Look for toys that are dishwasher safe or can be boiled for sterilisation. Avoid designs with textured grooves or crevices that are difficult to clean thoroughly.",
+            ],
+          },
+          {
+            title: "5. Appropriate Size",
+            paragraphs: [
+              "The toy must be large enough that it cannot be accidentally swallowed or become a choking hazard. For children under 3, ensure the toy meets relevant safety standards for that age group.",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Best Types of Autism Chewing Toys by Age",
+        table: {
+          headers: ["Age Group", "Recommended Chew Type", "Key Features"],
+          rows: [
+            [
+              "2–3 years",
+              "Wrist chew bands, teether-style silicone toys",
+              "Soft grade, attached to wrist or clothing, bright colours",
+            ],
+            [
+              "3–5 years",
+              "Chewelry pendants, animal-shaped chews",
+              "",
+            ],
+            [
+              "5–8 years",
+              "Pencil toppers, discreet pendants",
+              "Medium-firm grade, classroom-friendly, neutral designs",
+            ],
+            [
+              "8+ years",
+              "Firm chew necklaces, P-shaped or T-shaped chews",
+              "",
+            ],
+          ],
+        },
+        image: "/images/cwetoy-768x429.webp",
+      },
+      {
+        title: "Top Autism Chewing Toy Recommendations",
+        subSections: [
+          {
+            title: "1. ARK Therapeutic Chew Necklaces",
+            paragraphs: [
+              "ARK Therapeutic is one of the most trusted brands in the speech and occupational therapy community. Their chew necklaces come in three firmness levels (soft, medium, and firm/XT) and are made from medical-grade silicone. Particularly popular with school-age children as they are discreet and durable.",
+            ],
+            image: "/images/littletoys1-768x378.webp",
+          },
+          {
+            title: "2. Chewigem Sensory Chew Jewellery",
+            paragraphs: [
+              "Chewigem offers a wide range of wearable chewing tools designed to look like ordinary jewellery. This is particularly helpful for older children and teenagers who want a chewing tool that does not draw attention. Available in pendant, bracelet, and dog-tag styles.",
+            ],
+            image: "/images/jewelry1-768x370.webp",
+          },
+          {
+            title: "3. SentioCHEW Sensory Chew Necklace",
+            paragraphs: [
+              "A popular choice for toddlers and preschoolers, the SentioCHEW necklace features a breakaway safety clasp, food-grade silicone construction, and a range of shapes (dinosaur, shark, star) that children find engaging. Available in light and medium chewing intensities.",
+            ],
+            image: "/images/necktoy-768x419.webp",
+          },
+          {
+            title: "4. Munchables Chew Necklaces",
+            paragraphs: [
+              "Designed specifically for autism and sensory processing needs, Munchables chew necklaces feature themed designs (dinosaurs, sports, nature) that appeal to specific interests. Made from FDA-approved silicone with a reinforced breakaway necklace cord.",
+            ],
+          },
+          {
+            title: "5. Pencil Top Chewers for Classroom Use",
+            paragraphs: [
+              "For children who chew during focused work, pencil top chewing tools attach to any standard pencil or pen and provide oral sensory input discreetly during class. Brands like ARK and Chewigem both offer pencil-top versions that are widely used in school settings.",
+            ],
+            image: "/images/last-768x365.webp",
+          },
+        ],
+      },
+      {
+        title: "Tips for Introducing Chewing Toys to Your Child",
+        bullets: [
+          "Let the child choose: Offer 2 to 3 different shapes and let the child pick the one that appeals to them. Ownership and preference increase the likelihood of consistent use.",
+          "Make it a positive transition: When redirecting chewing from clothing or objects, calmly offer the chew toy as an alternative without shaming the child for the original behaviour.",
+          "Work with their occupational therapist: An OT can conduct a sensory assessment and recommend the right chewing intensity and tool type for your specific child.",
+          "Have a rotation: Keep 2 to 3 different chew toys available and alternate them to maintain the child's interest.",
+          "Check for wear: Inspect chewing toys regularly for bite marks, thinning, or damage, and replace them before they become a safety risk.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Are chewing toys safe for children with autism?",
+        answer:
+          "Yes, when purchased from reputable brands and chosen for the appropriate chewing intensity. Always select food-grade silicone toys, verify safety certifications, and check for wear regularly. Replace any toy that shows significant bite marks or deterioration.",
+      },
+      {
+        question:
+          "What is the difference between light, medium, and heavy chew toys?",
+        answer:
+          "The firmness rating reflects the toy's durability and resistance. Light chew toys are soft and pliable for gentle chewers. Medium toys have more resistance for moderate chewers. Heavy or XT-grade toys are the firmest and are designed for children who bite with significant force. Choosing the wrong grade, particularly one that is too soft for a heavy chewer, creates a safety risk.",
+      },
+      {
+        question:
+          "Can chewing toys help with speech and language development?",
+        answer:
+          "Oral motor activities, including chewing, can support the muscle coordination and awareness needed for speech production. Oral motor work is often used alongside speech therapy for children with autism. Consult a speech-language pathologist for guidance specific to your child.",
+      },
+      {
+        question: "What age can children start using chew toys?",
+        answer:
+          "Age-appropriate chewing tools are available from toddler age (12 months+). Always choose a toy rated for your child's age and size, and supervise young children during use. For children under 3, always choose toys that meet applicable safety standards for that age group.",
+      },
+      {
+        question:
+          "My child only chews on their clothing. How do I transition them to a chew toy?",
+        answer:
+          "Start by placing the chew toy in the same location the child typically begins chewing — attached to their collar area or wrist. Gently redirect with the chew toy each time clothing chewing occurs, offering the toy as a positive alternative. Consistency and patience are key — transitions typically take 1 to 3 weeks of regular redirection.",
+      },
+    ],
+    finalThoughts: [
+      "Chewing is a valid and meaningful sensory behaviour for many children with autism — and providing a safe, appropriate outlet for it is one of the most straightforward ways to support your child's sensory regulation. The right chewing toy, chosen for your child's specific needs and chewing intensity, can reduce anxiety, improve focus, and give your child a tool they can rely on throughout their day.",
+      linkedText(
+        "For more on supporting children with autism through play and sensory tools, explore our full resource library at Talk Early Ed, including our guide on the best toys for kids with autism",
+        [
+          {
+            text: "the best toys for kids with autism",
+            href: "#best-toys-for-kids-with-autism",
+          },
+        ]
+      ),
+    ],
+    references: [
+      "ASHA – Oral Sensory Processing in Children: https://www.asha.org/practice-portal/clinical-topics/pediatric-feeding-and-swallowing/",
+      "Autism Speaks – Sensory Issues in Autism: https://www.autismspeaks.org/sensory-issues",
+      "ARK Therapeutic – Chewing and Oral Sensory Seeking: https://www.arktherapeutic.com/",
+    ],
+  },
+  "fun-and-developmental-activities-for-your-3-month-old-infant": {
+    title: "Fun and Developmental Activities for Your 3-Month-Old Infant",
+    seoTitle: "Fun & Healthy Activities for Your 3-Month-Old Baby",
+    ogTitle: "Fun & Healthy Activities for Your 3-Month-Old Baby",
+    description:
+      "Discover effective, research-based activities to stimulate your 3-month-old's development. Learn how to play, bond, and support growth. Discover more now.",
+    ogDescription:
+      "Discover effective, research-based activities to stimulate your 3-month-old's development. Learn how to play, bond, and support growth. Discover more now.",
+    canonical:
+      "https://talkearlyed.com/fun-and-developmental-activities-for-your-3-month-old-infant/",
+    url: "https://talkearlyed.com/fun-and-developmental-activities-for-your-3-month-old-infant/",
+    ogUrl:
+      "https://talkearlyed.com/fun-and-developmental-activities-for-your-3-month-old-infant/",
+    author: "Hajra Abbasi",
+    date: "October 14, 2025",
+    image: "/images/TED-blog-img-5.webp",
+    excerpt:
+      "Discover effective, age-appropriate activities to stimulate your 3-month-old's cognitive, motor, sensory, and emotional development, while supporting early bonding and growth.",
+    variant: "full",
+    views: "1549 Views",
+    comments: "0 Comment",
+    category: "Early Ed & Teaching",
+    keySummary:
+      "Discover effective, age-appropriate activities to stimulate your 3-month-old's cognitive, motor, sensory, and emotional development, while supporting early bonding and growth.",
+    intro: [
+      "As a parent or caregiver of a three-month-old infant, you may feel uncertain about what to do during those awake windows. You might worry: \"Are these little interactions meaningful? Am I helping my baby's brain grow? Or am I missing critical stimulation?\" Without purposeful engagement, those early months risk being underutilized. The window for shaping neural pathways is narrow. Babies may develop more slowly in motor skills, communication, or sensory integration if deprived of consistent, developmentally appropriate stimulation. Many caregivers feel guilt or stress wondering whether they're doing \"enough\", and they are often overwhelmed by the abundance of conflicting advice online.",
+      "This blog equips you with a comprehensive, evidence-based toolkit of activities, routines, and insights tailored to 3-month-old infants. We'll unpack why each type of activity matters, how to implement it, when to do it, and what to watch for. You'll also get visuals suggestions, safety pointers, and links to deeper reading, so you can engage your infant confidently and joyfully.",
+    ],
+    sections: [
+      {
+        title: "Developmental Landscape at 3 Months",
+        paragraphs: [
+          "At three months, your infant is at a fascinating crossroads of early development. Physically, many infants can raise the head and chest while lying on their stomach, support their upper body with arms, and kick with legs (HealthyChildren's \"Developmental Milestones: 3 Months\"). Their hands are opening more, fingers spreading, and they may swipe at or reach for objects.",
+          "On the sensory side, vision is maturing: by three months many babies can track moving objects, shift gaze between items, and begin to discern more colors beyond high-contrast black and white. They also become more sensitive to sounds, voices, and differing textures (Seattle Children's Hospital on toys and play).",
+          "Cognitively and socially, infants of this age begin to coo, make vowel sounds, and respond to your facial expressions and voice inflections. They begin to show preferences in faces and voices, react more to caregivers, and start to form early social bonds.",
+          "It's a stage of rapid neural connectivity: \"simple activities such as talking, reading and singing to your baby will start them on the path to a successful life\" (Building Babies' Brains resource). Also, researchers emphasize that play in infancy helps transition children from dependence to self-regulation as they grow (The Power of Play, AAP).",
+          "Understanding this landscape helps tailor your approach: you're not asking a baby to do too much, just enough variation, repetition, and supportive challenge to build foundations.",
+        ],
+      },
+      {
+        title: "Core Activity Domains & Why They Matter",
+        paragraphs: [
+          "Here we break down major domains of activity, with rationale, sample ideas, and implementation tips.",
+        ],
+        subSections: [
+          {
+            title: "A. Motor & Physical Activities",
+            paragraphs: [
+              linkedText(
+                "Why it matters: Physical movement helps strengthen neck, back, shoulder, and core muscles, preparing the baby for rolling, sitting, and crawling. It also encourages body awareness and spatial orientation. Physical activity in infancy supports healthy trajectories later in childhood (narrative review on early physical activity) PMC.",
+                [
+                  {
+                    text: "PMC.",
+                    href: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10244791/",
+                  },
+                ]
+              ),
+            ],
+            images: [
+              "/images/TED-1.webp",
+              "/images/TED-2.webp",
+              "/images/TED-3.webp",
+              "/images/TED-4.webp",
+            ],
+            bullets: [
+              "Tummy Time: Place the baby on their stomach while awake and supervised, starting with short sessions (3–5 minutes) and gradually increasing. Use toys or your face as a focus to encourage head lifting and neck strength.",
+              "Baby Push-ups / Head Lifts: While on the tummy, motivate the baby to push up on elbows (peek-a-boo beneath) or lift the head to look at you.",
+              "Bicycle Legs / Gentle Kicks: Lay baby on the back and move their legs in gentle \"pedal\" motions to awaken vestibular and proprioceptive senses (Nemours).",
+              "Supported Sitting Practice: With your support or cushions, allow the baby to experience gentle upright posture for short periods, stimulating trunk control. These early motor exercises not only strengthen muscles but also provide opportunities for responsive caregiving.",
+              "Gentle Reaching & Grasp Encouragement: Dangling a soft toy just within reach encourages small shoulder and arm control movements (How Wee Learn).",
+            ],
+            afterParagraphs: [
+              "Each small movement session builds stamina, flexibility, and motor mapping.",
+            ],
+          },
+          {
+            title: "B. Sensory & Tactile Exploration",
+            paragraphs: [
+              "Why it matters: Early sensory play shapes how infants interpret touch, texture, pressure, temperature, and proprioception, laying groundwork for later sensorimotor integration. This supports everything from fine motor to emotional regulation.",
+            ],
+            bullets: [
+              "Texture Mats or Sensory Blankets: Offer cloths, satin, fleece, crinkly paper, or soft sponge as safe textures to explore.",
+              "Sensory Bottles / Discovery Jars: Fill sealed bottles with water, glitter, colored beads, or rice to create visually engaging tactile sounds (without choking risk).",
+              "Safe Household Objects: Let the baby hold and mouth safe, sanitized items (e.g., silicone spatula, teething toy) to explore weight and shape.",
+              "Temperature Contrast: Gently let them feel a cool cloth vs. a room-temperature cloth (always supervised).",
+              "Mirror Exploration: Place a baby-safe mirror nearby so the baby can see their own hand or face (encourages tactile-visual integration).",
+            ],
+            image: "/images/TED-5.webp",
+          },
+          {
+            title: "C. Language, Voice & Social Engagement",
+            paragraphs: [
+              "Why it matters: Early vocal interactions form the scaffold for later language, social understanding, and emotional bonding. Interactive \"serve and return\" conversations strengthen neural circuits for communication. (CDC's positive parenting)",
+            ],
+            bullets: [
+              "Parentese / Baby Talk (CDS – Child Directed Speech): Use slower, exaggerated, melodic tone to talk to your baby; infants prefer this and it supports language development.",
+              "Mimic Coos & Sounds: When baby coos or babbles, respond by repeating and expanding (\"ahh → ahh-ohh\") to model turn-taking.",
+              "Face-to-Face Chats: Sit facing baby during feedings or play, making eye contact, smiling, and talking about what you see.",
+              "Reading Board Books / Simple Stories: Even though infants don't understand the plot, hearing varied sounds and seeing images still helps neural patterning.",
+              "Nursery Rhymes & Finger Plays: Simple rhymes (\"Itsy Bitsy Spider\") with hand motions engages both motor and language domains.",
+            ],
+            afterParagraphs: [
+              "These responsive interactions teach babies that communication is meaningful and build early social wiring.",
+            ],
+          },
+          {
+            title: "D. Visual & Tracking Stimulation",
+            paragraphs: [
+              "Why it matters: Developing visual tracking and eye–hand coordination is pivotal in the first months. Babies must learn to shift gaze, follow moving objects, and eventually link vision to action.",
+            ],
+            bullets: [
+              "Black-and-White or High-Contrast Cards: Because infants first discern strong contrasts, present cards or images with bold black/white patterns.",
+              "Dangling Toys / Mobiles: Position colorful toys just above them so they can swat, track movement, or glance upward (Nemours guidance).",
+              "Slow Movement Following: Move a toy slowly left-right or up-down while within their visual field; encourage them to track it.",
+              "Mirror Tracking: Observe their eyes following their own hand or face in the mirror.",
+              "Tracking Soft Balls / Scarves: Dangling a scarf or soft ball and gently moving it gives the baby targets to visually follow (Raising Children suggestions).",
+            ],
+            afterParagraphs: [
+              "Over time, you'll notice the baby's gaze becomes smoother and more accurate.",
+            ],
+          },
+          {
+            title: "E. Musical, Rhythmic & Auditory Play",
+            paragraphs: [
+              "Why it matters: Rhythm and auditory experiences foster early brain connectivity, pattern recognition, and emotional resonance. Musical exposure in infancy is linked to enhanced cognitive and linguistic skills.",
+            ],
+            bullets: [
+              "Soft Singing / Lullabies: Use a soothing voice and repeat melodies; babies often recognize nursery songs by repetition.",
+              "Rattles / Bells: Provide (safe) sound-making toys they can shake or you can shake within their hearing range.",
+              "Clapping Games & Rhythmic Beats: Gentle claps or tapping surfaces to a beat help infants predict patterns.",
+              "Environmental Sounds: Narrate everyday noises (\"listen, the kettle is whistling\") to help them link sound to source.",
+              "Instrument Sounds: Let them hear soft maracas, xylophone chimes, or soft drums from a moderate distance.",
+            ],
+            afterParagraphs: [
+              "Sound variation stimulates auditory pathways and primes musical and language domains.",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Sample Daily Routine & Activity Table",
+        paragraphs: [
+          "Here is a sample structure you might adapt. (Always follow baby's cues—flexible is key.)",
+        ],
+        table: {
+          headers: ["Time", "Activity Type", "Example & Notes"],
+          rows: [
+            [
+              "Upon waking (after feeding)",
+              "Tummy time + visual tracking",
+              "Place baby on tummy, dangle a toy, encourage head lifts (start with 2–3 mins)",
+            ],
+            [
+              "Mid-morning",
+              "Sensory play",
+              "Soft texture cloths, sensory bottles, safe object exploration",
+            ],
+            [
+              "Late morning",
+              "Vocal / face time",
+              "Sit face to face, talk, coo, read a short board book",
+            ],
+            [
+              "Before nap",
+              "Gentle movement + language",
+              "Bicycle legs, supported sitting, sing lullaby",
+            ],
+            [
+              "After nap",
+              "Auditory / music play",
+              "Use rattle, bells, or sing rhythmic songs",
+            ],
+            [
+              "Afternoon",
+              "Combined play",
+              "Tummy or back play with visual toys, mirror time, responsive conversation",
+            ],
+            [
+              "Evening (pre-bed)",
+              "Calm interaction",
+              "Soft singing, cuddle while reading, gentle rattles",
+            ],
+            [
+              "Night awakenings",
+              "Quiet social cueing",
+              "Soothing voice, responsive interaction if awake but calm",
+            ],
+          ],
+        },
+        image: "/images/TED-6.webp",
+      },
+      {
+        title: "Safety Guidelines & Practical Tips",
+        bullets: [
+          "Supervision always: Never leave baby unattended, especially during tummy time or with toys.",
+          "Timing matters: Don't start tummy time immediately after feeding (wait ~30 minutes) to avoid discomfort (Healthy Young Minds).",
+          "Toy safety: Avoid toys with small parts, strings, or anything that can detach and cause choking.",
+          "Limit overhead crib toys: Do not hang loose items over cribs (risk of entanglement) (Nemours).",
+          "Watch cues: If the baby starts fussing, turning head away, arching back, that's a signal to pause or switch activity.",
+          "Alternate postures: Don't keep baby in one position too long—vary tummy, back, side-lying (rotating).",
+          "Moderate stimulation: Overwhelm can lead to fussiness, so keep changes gradual.",
+          "Safe space: Use a firm, padded surface, avoid soft bedding or unstable surfaces.",
+          "Health checks: Always consult a pediatrician if the baby shows unusual delays, persistent refusal to move head, or asymmetry.",
+        ],
+      },
+      {
+        title: "Troubleshooting Common Challenges",
+        subSections: [
+          {
+            title: "Issue: Baby hates tummy time / cries",
+            bullets: [
+              "Try shorter intervals (30s–1 min) and build up gradually.",
+              "Place it on your chest or lap initially for comfort.",
+              "Use a mirror or attractive toy to draw attention.",
+              "Switch to side-lying, then transition to tummy.",
+              "Make it playful: sing, smile, or do peek-a-boo.",
+            ],
+          },
+          {
+            title: "Issue: Baby loses interest quickly",
+            bullets: [
+              "Rotate toys every few minutes to refresh novelty.",
+              "Use interactive vocal prompts (\"can you find the bell?\").",
+              "Combine domains: move a toy (visual) while talking (vocal) while gently tapping (tactile) to engage multiple senses.",
+            ],
+          },
+          {
+            title: "Issue: Baby sleeps through \"awake\" windows",
+            bullets: [
+              "Allow nap breaks; some babies need longer rest.",
+              "Try during peak wakefulness (mid-morning or gentle stretching after feeding).",
+              "Use gentler stimuli to coax awake period—soft sounds, gentle light.",
+            ],
+          },
+          {
+            title: "Issue: Concerned about delays",
+            bullets: [
+              "Refer to developmental milestones (HealthyChildren, Nemours).",
+              "Track progress weekly.",
+              "Consult a pediatrician if at 4–5 months the baby isn't making head lifts, tracking, or responding to voice.",
+              "Consider early intervention services if concerns persist.",
+            ],
+          },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "How much total awake activity should a 3-month-old get daily?",
+        answer:
+          "There's no fixed total; aim for several short (2–10 minute) windows across the day, adding up to 30–60 minutes of alert interaction, broken into manageable chunks per your baby's cues.",
+      },
+      {
+        question: "When should I introduce music or toys?",
+        answer:
+          "You can begin immediately: rattles, soft toys, gentle music are all fine as long as they're safe, age-appropriate, and supervised.",
+      },
+      {
+        question: "Can I enroll my baby in swimming classes now?",
+        answer:
+          "Some infant swim programs begin around 3–4 months when head control is sufficient (infant swimming guidelines). Consult your pediatrician and ensure classes follow infant safety protocols.",
+      },
+      {
+        question:
+          "What if my baby doesn't respond or seems disinterested often?",
+        answer:
+          "Some days are less alert, respect that. Try a different domain, lower stimulation, or return later. If consistent lack of response continues, discuss with the pediatrician.",
+      },
+      {
+        question: "Do I need special toys or equipment?",
+        answer:
+          "No, many effective activities use your voice, hands, a mirror, soft fabrics, and safe household objects.",
+      },
+    ],
+    finalThoughts: [
+      "Every minute of interaction, even a few coos, tummy time attempts, or soft songs, matters tremendously in shaping your baby's early development. The key is variety, consistency, responsiveness, and following your infant's cues. By combining motor, sensory, vocal, visual, and musical activities, you build a rich developmental tapestry.",
+    ],
+    references: [
+      "HealthyChildren. Developmental Milestones: 3 Months. https://www.healthychildren.org/English/ages-stages/baby/Pages/Developmental-Milestones-3-Months.aspx",
+      "Nemours KidsHealth. Learning, Play, and Your 1- to 3-Month-Old. https://kidshealth.org/en/parents/learn13m.html",
+      "CDC. Positive Parenting Tips: Infants (0–1 years). https://www.cdc.gov/child-development/positive-parenting-tips/infants.html",
+      "The Power of Play: A Pediatric Role in Enhancing Development in Young Children (AAP). https://publications.aap.org/pediatrics/article/142/3/e20182058/38649/The-Power-of-Play-A-Pediatric-Role-in-Enhancing",
+      "Building Babies' Brains. Resources for Ages 0–3 Months. https://buildingbabiesbrains.com/resources/0-to-3-months/",
+      "Physical activity in infancy and early childhood. https://pmc.ncbi.nlm.nih.gov/articles/PMC10244791/",
+      "How Wee Learn. Learning Activities for 3 Month Old Babies. https://www.howweelearn.com/learning-activities-3-month-old-babies/",
+      "Raising Children Network: Play ideas for baby cognitive development.",
+      "Baby Talk. https://en.wikipedia.org/wiki/Baby_talk",
+      "Seattle Children's Hospital: Toys and Play: Birth to 12 Months. https://www.seattlechildrens.org/health-safety/parenting/toys-and-play-birth-to-12-months",
+      "Activities For 3 Month Old Baby: Learning And Development. https://www.healthyyoungminds.com/activities-for-3-month-old/",
+    ],
+  },
 };
 
 const sidebarPosts = [
@@ -5165,6 +5667,13 @@ function ArticleSection({ section }) {
           {subSection.paragraphs?.map((paragraph) => (
             <p key={textKey(paragraph)}>{renderLinkedText(paragraph)}</p>
           ))}
+          {subSection.images?.length > 0 && (
+            <div className="blog-inline-images-row">
+              {subSection.images.map((image) => (
+                <img key={image} src={image} alt="" />
+              ))}
+            </div>
+          )}
           {subSection.bullets && (
             <ul>
               {subSection.bullets.map((bullet) => (

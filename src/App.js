@@ -71,6 +71,12 @@ function App() {
     "best-educational-toys": <BlogDetail />,
     "best-educational-toys-for-2-year-olds": <BlogDetail />,
     "best-toys-for-kids-with-autism": <BlogDetail />,
+    "autism-chewing-toys-why-kids-chew-and-the-best-safe-options": (
+      <BlogDetail />
+    ),
+    "fun-and-developmental-activities-for-your-3-month-old-infant": (
+      <BlogDetail />
+    ),
     "empathizing-the-vital-significance-understanding-pre-existing-medical-conditions-in-preschoolers": (
       <BlogDetail />
     ),
