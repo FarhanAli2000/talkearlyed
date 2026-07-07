@@ -4,28 +4,38 @@ import Footer from "../components/Footer";
 const posts = [
   {
     title:
-      "Crafts for Kids: Easy, Creative, and Educational Activities For Every Age",
-    meta: "Daniela Lopez - June 16, 2026",
-    image: "/images/WhatsApp-Image-2026-06-16-at-4.41.23-PM.webp",
-    href: "#crafts-for-kids",
+      "Learning Toys for 4-Year-Olds: A Complete Guide to Smart, Fun Play",
+    meta: "Joseline Martinez - March 27, 2026",
+    image: "/images/ted-blog-8-1.webp",
+    href: "#learning-toys-for-4-year-olds",
     description:
-      "This blog explores the best outdoor sensory play ideas for babies and toddlers that are fun, safe, and developmentally enriching.",
+      "Sensory play isn't just fun, it's essential for your baby's motor skill development. Explore activities that enhance movement, coordination, and brain growth.",
   },
   {
-    title: "Outdoor Sensory Play Ideas for Babies and Toddlers",
-    meta: "Daniela Lopez - May 8, 2026",
-    image: "/images/blog10.webp",
-    href: "#outdoor-sensory-play-ideas-for-babies-and-toddlers",
+    title: "How Sensory Play Helps Infant Motor Skill Development",
+    meta: "Hajra Abbasi - March 18, 2026",
+    image: "/images/TED-blog7-1.webp",
+    href: "#how-sensory-play-helps-infant-motor-skill-development",
     description:
-      "This blog explores the best outdoor sensory play ideas for babies and toddlers that are fun, safe, and developmentally enriching.",
+      "As parents, caregivers, or early educators, we often focus on teaching words or colors, but the foundation of your baby's learning starts with movement and exploration.",
   },
   {
-    title: "Indoor Sensory Activities for Infants During Rainy Days",
-    meta: "Daniela Lopez - May 7, 2026",
-    image: "/images/featued-1-1.webp",
-    href: "#indoor-sensory-activities-for-infants-during-rainy-days",
+    title:
+      "Educational Toy Ideas That Encourage Creativity and Motor Skills in Two-Year-Olds",
+    meta: "Joseline Martinez - March 5, 2026",
+    image: "/images/ted-blog-6-1.webp",
+    href: "#best-educational-toys",
     description:
-      "This blog provides practical indoor sensory activities for infants to keep them engaged and support development on rainy days.",
+      "Educational toys for two-year-olds help build fine and gross motor skills, spark creativity, and support early cognitive development.",
+  },
+  {
+    title:
+      "Best Educational Toys for 2-Year-Olds: The Ultimate 2026 Guide to Play That Builds Brains",
+    meta: "Hajra Abbasi - February 17, 2026",
+    image: "/images/TED-blog-img.webp",
+    href: "#best-educational-toys-for-2-year-olds",
+    description:
+      "Discover the top educational toys for 2-year-olds that develop fine and gross motor skills, problem-solving, language, and creativity.",
   },
 ];
 
@@ -43,7 +53,7 @@ const faqs = [
   "What is the repayment term of my loan?",
 ];
 
-function EarlyEducation() {
+function ChildDevelopment() {
   return (
     <main className="parenting-page">
       <Header />
@@ -55,16 +65,16 @@ function EarlyEducation() {
         <div className="parenting-hero__overlay" />
         <div className="parenting-hero__content">
           <div className="parenting-hero__eyebrow-wrap">
-            <p>Early education, made simple for L.A families</p>
+            <p>Child development, made simple for L.A families</p>
             <img src="/images/Layer_1-2.png" alt="" aria-hidden="true" />
           </div>
           <h1>
-            Helping Los Angeles <span>Early Education</span>
+            Helping Los Angeles <span>Child Development</span>
           </h1>
           <p className="parenting-hero__copy">
-            From sensory play to creative crafts and learning toys, we help you
-            find fun, developmentally rich activities for babies, toddlers, and
-            preschoolers across Los Angeles
+            From sensory play to learning toys, we help you understand how
+            children grow, learn, and thrive through every stage of early
+            development across Los Angeles
           </p>
         </div>
         <img
@@ -95,7 +105,7 @@ function EarlyEducation() {
               {posts.map((post, index) => (
                 <a
                   className="parenting-card"
-                  href={post.href || "#early-education"}
+                  href={post.href || "#child-development"}
                   key={`${post.title}-${index}`}
                 >
                   <img src={post.image} alt="" />
@@ -125,7 +135,7 @@ function EarlyEducation() {
             <div className="parenting-side-block parenting-side-block--related">
               <p className="parenting-side-block__eyebrow">Related</p>
               <h2>Articles</h2>
-              {posts.slice(0, 5).map((post, index) => (
+              {posts.slice(0, 4).map((post, index) => (
                 <article className="related-card" key={`related-${index}`}>
                   <img src={post.image} alt="" />
                   <div>
@@ -165,11 +175,11 @@ function EarlyEducation() {
 
       <section className="parenting-newsletter">
         <div className="parenting-newsletter__card">
-          <span>Early Education Newsletter</span>
-          <h2>Subscribe for Learning Tips</h2>
+          <span>Child Development Newsletter</span>
+          <h2>Subscribe for Development Tips</h2>
           <p>
-            Sensory play ideas, craft activities, and toy guides — short,
-            useful, and made for busy parents
+            Motor skills, sensory play, and toy guides — short, useful, and made
+            for busy parents
           </p>
           <form>
             <input type="email" placeholder="Enter your email" aria-label="Email address" />
@@ -183,4 +193,4 @@ function EarlyEducation() {
   );
 }
 
-export default EarlyEducation;
+export default ChildDevelopment;

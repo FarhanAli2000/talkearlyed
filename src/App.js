@@ -5,9 +5,10 @@ import BlogDetail from "./pages/BlogDetail";
 import Contact from "./pages/Contact";
 import Parenting from "./pages/Parenting";
 import EarlyEducation from "./pages/EarlyEducation";
+import ChildDevelopment from "./pages/ChildDevelopment";
+import SpecialNeeds from "./pages/SpecialNeeds";
 import PreschoolLists from "./pages/PreschoolLists";
 import LosAngelesResources from "./pages/LosAngelesResources";
-import SpecialNeeds from "./pages/SpecialNeeds";
 import Recommendations from "./pages/Recommendations";
 import HajraAbbasi from "./pages/HajraAbbasi";
 import JoselinMartinez from "./pages/JoselinMartinez";
@@ -68,12 +69,25 @@ function App() {
     "learning-toys-for-4-year-olds": <BlogDetail />,
     "how-sensory-play-helps-infant-motor-skill-development": <BlogDetail />,
     "best-educational-toys": <BlogDetail />,
+    "best-educational-toys-for-2-year-olds": <BlogDetail />,
+    "best-toys-for-kids-with-autism": <BlogDetail />,
+    "empathizing-the-vital-significance-understanding-pre-existing-medical-conditions-in-preschoolers": (
+      <BlogDetail />
+    ),
+    "autism-puzzle-piece-autism-puzzle-piece-symbol": <BlogDetail />,
+    "reassessing-the-autism-puzzle-piece-the-case-for-change-and-preferred-alternatives": (
+      <BlogDetail />
+    ),
+    "10-ways-to-improve-fine-motor-skills": <BlogDetail />,
+    "short-vowel-reading-fluency-to-build-strong-readers": <BlogDetail />,
+    "6-activities-your-kids-will-love": <BlogDetail />,
     "how-to-choose-the-right-centers-for-your-child": <BlogDetail />,
     "blog-detail": <BlogDetail />,
     contact: <Contact />,
     "los-angeles-resources": <LosAngelesResources />,
     parenting: <Parenting />,
     "early-education": <EarlyEducation />,
+    "child-development": <ChildDevelopment />,
     "special-needs": <SpecialNeeds />,
     "preschool-lists": <PreschoolLists />,
     "preschools-list": <PreschoolLists />,

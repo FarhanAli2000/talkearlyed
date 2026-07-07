@@ -2,6 +2,7 @@ const navItems = [
   { label: "Home", href: "#home" },
   { label: "Parenting", href: "#parenting" },
   { label: "Early Education", href: "#early-education" },
+  { label: "Child Development", href: "#child-development" },
   { label: "Special Needs", href: "#special-needs" },
   {
     label: "Los Angeles Resources",
