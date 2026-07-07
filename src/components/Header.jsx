@@ -9,7 +9,13 @@ const navItems = [
   {
     label: "Los Angeles Resources",
     href: "#los-angeles-resources",
-    children: [{ label: "Preschool Lists", href: "#preschool-lists" }],
+    children: [
+      { label: "Preschool Lists", href: "#preschool-lists" },
+      { label: "Daycare", href: "#daycare" },
+      { label: "Speech Therapy", href: "#speech-therapy" },
+      { label: "Summer Camps", href: "#summer-camps" },
+      { label: "Autism Resources", href: "#autism-resources" },
+    ],
   },
   { label: "Recommendations", href: "#recommendations" },
 ];

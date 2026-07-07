@@ -8,6 +8,10 @@ import EarlyEducation from "./pages/EarlyEducation";
 import ChildDevelopment from "./pages/ChildDevelopment";
 import SpecialNeeds from "./pages/SpecialNeeds";
 import PreschoolLists from "./pages/PreschoolLists";
+import Daycare from "./pages/Daycare";
+import SpeechTherapy from "./pages/SpeechTherapy";
+import SummerCamps from "./pages/SummerCamps";
+import AutismResources from "./pages/AutismResources";
 import LosAngelesResources from "./pages/LosAngelesResources";
 import Recommendations from "./pages/Recommendations";
 import HajraAbbasi from "./pages/HajraAbbasi";
@@ -97,6 +101,10 @@ function App() {
     "special-needs": <SpecialNeeds />,
     "preschool-lists": <PreschoolLists />,
     "preschools-list": <PreschoolLists />,
+    daycare: <Daycare />,
+    "speech-therapy": <SpeechTherapy />,
+    "summer-camps": <SummerCamps />,
+    "autism-resources": <AutismResources />,
   };
 
   return <div className="app">{pages[route] || <Home />}</div>;
