@@ -154,13 +154,17 @@ function ChildDevelopment() {
               <p className="parenting-side-block__eyebrow">Related</p>
               <h2>Articles</h2>
               {posts.slice(0, 4).map((post, index) => (
-                <article className="related-card" key={`related-${index}`}>
+                <a
+                  className="related-card"
+                  href={post.href || "#child-development"}
+                  key={`related-${post.href || index}`}
+                >
                   <img src={post.image} alt="" />
                   <div>
                     <h3>{post.title}</h3>
-                    <p>{post.description}</p>
+                    <p>{post.meta}</p>
                   </div>
-                </article>
+                </a>
               ))}
             </div>
           </aside>

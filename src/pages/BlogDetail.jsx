@@ -5545,28 +5545,10 @@ const articles = {
   },
 };
 
-const sidebarPosts = [
-  "Crafts for Kids: Easy, Creative, and Educational Activities for Every Age",
-  "Autism Chewing Toys: Why Kids Chew and the Best Safe Options",
-  "Outdoor Sensory Play Ideas for Babies and Toddlers",
-  "Indoor Sensory Activities for Infants During Rainy Days",
-  "Learning Toys for 4-Year-Olds: A Complete Guide to Smart, Fun Play",
-];
-
-const sidebarCategories = [
-  ["Autism", 7],
-  ["Early Ed & Teaching", 45],
-  ["Neurodiversity", 7],
-  ["Parenting & Infants", 23],
-  ["Play & Activities", 4],
-  ["Toys", 7],
-];
-
-const sidebarPopularPosts = [
-  "Crafts for Kids: Easy, Creative, and Educational Activities for Every Age",
-  "Autism Chewing Toys: Why Kids Chew and the Best Safe Options",
-  "Outdoor Sensory Play Ideas for Babies and Toddlers",
-  "Indoor Sensory Activities for Infants During Rainy Days",
+const sidebarResources = [
+  { label: "Preschools", href: "#preschool-lists" },
+  { label: "Morning Routine Checklist", href: "#parenting" },
+  { label: "Preschool Questions PDF", href: "#parenting" },
 ];
 
 const sidebarTags = [
@@ -5607,6 +5589,48 @@ const sidebarTags = [
   "transition to preschool",
   "trauma",
 ];
+
+const tagColorClasses = [
+  "blog-sidebar__tag--red",
+  "blog-sidebar__tag--orange",
+  "blog-sidebar__tag--purple",
+];
+
+const splitBlogHeroTitle = (title) => {
+  const words = title.trim().split(/\s+/);
+
+  if (words.length <= 2) {
+    return { main: "", accent: title };
+  }
+
+  const accentCount = words.length > 6 ? 3 : 2;
+
+  return {
+    main: words.slice(0, -accentCount).join(" "),
+    accent: words.slice(-accentCount).join(" "),
+  };
+};
+
+const getRelatedArticles = (currentSlug, limit = 4) => {
+  const currentArticle = articles[currentSlug];
+  const currentCategory = currentArticle?.category;
+
+  return Object.entries(articles)
+    .filter(([slug, data]) => slug !== currentSlug && data.variant === "full")
+    .sort(([, a], [, b]) => {
+      const aMatch = a.category === currentCategory ? 0 : 1;
+      const bMatch = b.category === currentCategory ? 0 : 1;
+      return aMatch - bMatch;
+    })
+    .slice(0, limit)
+    .map(([slug, data]) => ({
+      slug,
+      title: data.title,
+      image: data.image,
+      date: data.date,
+      href: `#${slug}`,
+    }));
+};
 
 const slugify = (value) =>
   value
@@ -5748,30 +5772,133 @@ function ArticleSection({ section }) {
   );
 }
 
-function FullBlogDetail({ article }) {
+function BlogDetailSidebar({ currentSlug }) {
+  const relatedArticles = getRelatedArticles(currentSlug);
+
+  return (
+    <aside className="blog-sidebar">
+      <div className="blog-sidebar__widget blog-sidebar__resources">
+        <h2>Resources</h2>
+        <ul>
+          {sidebarResources.map((resource) => (
+            <li key={resource.label}>
+              <a href={resource.href}>{resource.label}</a>
+              <a className="blog-sidebar__download" href={resource.href}>
+                Download now
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="blog-sidebar__widget blog-sidebar__related">
+        <h2>Related Articles</h2>
+        <ul>
+          {relatedArticles.map((post) => (
+            <li key={post.slug}>
+              <a className="blog-sidebar__related-link" href={post.href}>
+                <img src={post.image} alt="" />
+                <span>
+                  <strong>{post.title}</strong>
+                  <em>{post.date}</em>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="blog-sidebar__widget blog-sidebar__tags">
+        <h2>Tags</h2>
+        <div>
+          {sidebarTags.slice(0, 14).map((tag, index) => (
+            <a
+              className={`blog-sidebar__tag ${tagColorClasses[index % tagColorClasses.length]}`}
+              href="#parenting"
+              key={tag}
+            >
+              {tag}
+            </a>
+          ))}
+        </div>
+      </div>
+    </aside>
+  );
+}
+
+function BlogDetailNewsletter() {
+  return (
+    <section className="blog-detail-newsletter parenting-newsletter">
+      <div className="parenting-newsletter__card">
+        <span>Newsletter</span>
+        <h2>Subscribe for Parenting Tips</h2>
+        <p>
+          Get practical early-education guidance, local resources, and expert
+          parenting tips delivered to your inbox.
+        </p>
+        <form onSubmit={(event) => event.preventDefault()}>
+          <input type="email" placeholder="Enter your email" aria-label="Email" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  );
+}
+
+function FullBlogDetail({ article, slug }) {
+  const heroTitle = splitBlogHeroTitle(article.title);
+
   return (
     <main className="blog-detail-page blog-detail-page--full">
       <Header />
 
-      <section className="blog-detail-crumb">
-        <div className="blog-detail-crumb__inner">
-          <h1>{article.title}</h1>
-          <nav aria-label="Breadcrumb">
-            <a href="#home">Home</a>
-            <span>{article.category}</span>
-            <strong>{article.title}</strong>
-          </nav>
+      <section className="blog-detail-hero">
+        <div className="blog-detail-hero__inner">
+          <p className="blog-detail-hero__eyebrow">
+            Early education, made simple for LA families
+          </p>
+          <img
+            className="blog-detail-hero__underline"
+            src="/images/Layer_1-2.png"
+            alt=""
+            aria-hidden="true"
+          />
+          <h1 className="blog-detail-hero__title">
+            {heroTitle.main ? (
+              <>
+                {heroTitle.main} <span>{heroTitle.accent}</span>
+              </>
+            ) : (
+              <span>{heroTitle.accent}</span>
+            )}
+          </h1>
         </div>
       </section>
 
       <section className="blog-detail-layout">
         <div className="blog-detail-layout__inner">
           <article className="blog-single">
+            <nav className="blog-detail-breadcrumb" aria-label="Breadcrumb">
+              <a href="#parenting">Blog</a>
+              <span aria-hidden="true">›</span>
+              <span>{article.title}</span>
+            </nav>
+
             <img className="blog-single__hero" src={article.image} alt="" />
+
             <div className="blog-single__meta">
-              <span>{article.views}</span>
-              <span>{article.comments}</span>
-              <span>{article.date}</span>
+              <span>
+                <strong>Author:</strong> {article.author}
+              </span>
+              {article.reviewedBy && (
+                <span>
+                  <strong>Reviewed By:</strong> {article.reviewedBy}
+                </span>
+              )}
+              <span>
+                <strong>Updated</strong> {article.date}
+              </span>
+              {article.views && <span>{article.views}</span>}
             </div>
 
             <div className="blog-single__content">
@@ -5780,18 +5907,6 @@ function FullBlogDetail({ article }) {
                   <h2>Key Summary</h2>
                   <p>{renderLinkedText(article.keySummary)}</p>
                 </div>
-              )}
-
-              {article.intro?.map((paragraph) => (
-                <p key={textKey(paragraph)}>{renderLinkedText(paragraph)}</p>
-              ))}
-
-              {article.introImage && (
-                <img
-                  className="blog-single__intro-image"
-                  src={article.introImage}
-                  alt=""
-                />
               )}
 
               <div className="blog-toc">
@@ -5814,8 +5929,37 @@ function FullBlogDetail({ article }) {
                       <a href="#final-thoughts">Final Thoughts</a>
                     </li>
                   )}
+                  {article.references?.length > 0 && (
+                    <li>
+                      <a href="#references">References</a>
+                    </li>
+                  )}
                 </ul>
               </div>
+
+              {article.intro?.map((paragraph) => (
+                <p key={textKey(paragraph)}>{renderLinkedText(paragraph)}</p>
+              ))}
+
+              {article.introImage && (
+                <img
+                  className="blog-single__intro-image"
+                  src={article.introImage}
+                  alt=""
+                />
+              )}
+
+              {article.quickAnswer && (
+                <div className="blog-quick-answer">
+                  <span className="blog-quick-answer__icon" aria-hidden="true">
+                    💡
+                  </span>
+                  <div>
+                    <h2>Quick Answer</h2>
+                    <p>{renderLinkedText(article.quickAnswer)}</p>
+                  </div>
+                </div>
+              )}
 
               {article.sections?.map((section) => (
                 <ArticleSection section={section} key={section.title} />
@@ -5839,16 +5983,18 @@ function FullBlogDetail({ article }) {
 
               {article.faqs?.length > 0 && (
                 <section
-                  className="blog-article-section blog-article-faq"
+                  className="blog-article-section blog-detail-faq"
                   id="frequently-asked-questions"
                 >
                   <h2>Frequently Asked Questions</h2>
-                  {article.faqs.map((faq, index) => (
-                    <details key={faq.question} open={index === 0}>
-                      <summary>{faq.question}</summary>
-                      <p>{renderLinkedText(faq.answer)}</p>
-                    </details>
-                  ))}
+                  <div className="blog-detail-faq__list">
+                    {article.faqs.map((faq, index) => (
+                      <details className="blog-detail-faq__item" key={faq.question} open={index === 0}>
+                        <summary>{faq.question}</summary>
+                        <p>{renderLinkedText(faq.answer)}</p>
+                      </details>
+                    ))}
+                  </div>
                 </section>
               )}
 
@@ -5870,7 +6016,10 @@ function FullBlogDetail({ article }) {
               )}
 
               {article.references?.length > 0 && (
-                <section className="blog-article-section blog-article-references">
+                <section
+                  className="blog-article-section blog-article-references"
+                  id="references"
+                >
                   <h2>References</h2>
                   <ul>
                     {article.references.map((reference) => (
@@ -5882,63 +6031,11 @@ function FullBlogDetail({ article }) {
             </div>
           </article>
 
-          <aside className="blog-sidebar">
-            <div className="blog-sidebar__widget">
-              <h2>Recent Posts</h2>
-              <ul>
-                {sidebarPosts.map((post) => (
-                  <li key={post}>
-                    <a href="#parenting">{post}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="blog-sidebar__widget blog-sidebar__search">
-              <h2>Search</h2>
-              <div>
-                <input type="search" aria-label="Search" />
-                <button type="button">Search</button>
-              </div>
-            </div>
-
-            <div className="blog-sidebar__widget">
-              <h2>Categories</h2>
-              <ul>
-                {sidebarCategories.map(([category, count]) => (
-                  <li key={category}>
-                    <a href="#parenting">{category}</a>
-                    <span>{count}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="blog-sidebar__widget">
-              <h2>Popular Posts</h2>
-              <ul>
-                {sidebarPopularPosts.map((post) => (
-                  <li key={post}>
-                    <a href="#parenting">{post}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="blog-sidebar__widget blog-sidebar__tags">
-              <h2>Most Used Tags</h2>
-              <div>
-                {sidebarTags.map((tag) => (
-                  <a href="#parenting" key={tag}>
-                    {tag}
-                  </a>
-                ))}
-              </div>
-            </div>
-          </aside>
+          <BlogDetailSidebar currentSlug={slug} />
         </div>
       </section>
 
+      <BlogDetailNewsletter />
       <Footer />
     </main>
   );
@@ -6008,7 +6105,7 @@ function BlogDetail() {
   }, [article]);
 
   if (article.variant === "full") {
-    return <FullBlogDetail article={article} />;
+    return <FullBlogDetail article={article} slug={normalizedRoute} />;
   }
 
   return (
