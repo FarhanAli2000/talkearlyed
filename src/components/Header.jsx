@@ -9,6 +9,7 @@ const navItems = [
     children: [{ label: "Preschool Lists", href: "#preschool-lists" }],
   },
   { label: "About", href: "#about" },
+  { label: "Recommendations", href: "#recommendations" },
   { label: "Contact", href: "#contact" },
 ];
 

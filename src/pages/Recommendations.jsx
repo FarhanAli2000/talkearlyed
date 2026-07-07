@@ -1,16 +1,16 @@
 import Header from "../components/Header";
-import SpecialHero from "../components/SpecialHero";
-import SpecialSecond from "../components/SpecialSecond";
-import SpecialFaqs from "../components/SpecialFaqs";
+import RecommendationsHero from "../components/RecommendationsHero";
+import RecommendSecond from "../components/RecommendSecond";
+import RecommendFaqs from "../components/RecommendFaqs";
 import Footer from "../components/Footer";
 
-function SpecialNeeds() {
+function Recommendations() {
   return (
-    <main className="special-needs-page">
+    <main className="recommendations-page">
       <Header />
-      <SpecialHero />
-      <SpecialSecond />
-      <SpecialFaqs />
+      <RecommendationsHero />
+      <RecommendSecond />
+      <RecommendFaqs />
 
       <section className="parenting-newsletter">
         <div className="parenting-newsletter__card">
@@ -32,4 +32,4 @@ function SpecialNeeds() {
   );
 }
 
-export default SpecialNeeds;
+export default Recommendations;

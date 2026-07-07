@@ -8,6 +8,11 @@ import EarlyEducation from "./pages/EarlyEducation";
 import PreschoolLists from "./pages/PreschoolLists";
 import LosAngelesResources from "./pages/LosAngelesResources";
 import SpecialNeeds from "./pages/SpecialNeeds";
+import Recommendations from "./pages/Recommendations";
+import HajraAbbasi from "./pages/HajraAbbasi";
+import JoselinMartinez from "./pages/JoselinMartinez";
+import Daniela from "./pages/Daniela";
+import Maddie from "./pages/Maddie";
 import "./App.css";
 
 function App() {
@@ -31,6 +36,12 @@ function App() {
 
   const pages = {
     about: <About />,
+    recommendations: <Recommendations />,
+    "hajra-abbassi": <HajraAbbasi />,
+    "hajra-abbasi": <HajraAbbasi />,
+    "joseline-martinez": <JoselinMartinez />,
+    "daniela-morales": <Daniela />,
+    "maddie-win": <Maddie />,
     "advice-for-new-moms-complete-postpartum-survival-recovery-guid": <BlogDetail />,
     "advice-for-new-moms-complete-postpartum-survival-recovery-guide": <BlogDetail />,
     "creative-lunch-ideas-for-toddlers": <BlogDetail />,

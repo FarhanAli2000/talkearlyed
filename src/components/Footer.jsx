@@ -19,6 +19,15 @@ const footerColumns = [
     ],
   },
   {
+    title: "Meet the Authors",
+    links: [
+      "Hajra Abbassi",
+      "Joseline Martinez",
+      "Daniela Morales",
+      "Maddie Win",
+    ],
+  },
+  {
     title: "Locations",
     links: [
       "Pasadena",
