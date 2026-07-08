@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import ChildDevelopmentCta from "../components/ChildDevelopmentCta";
 
 const posts = [
   {
@@ -191,20 +192,7 @@ function ChildDevelopment() {
         </div>
       </section>
 
-      <section className="parenting-newsletter">
-        <div className="parenting-newsletter__card">
-          <span>Child Development Newsletter</span>
-          <h2>Subscribe for Development Tips</h2>
-          <p>
-            Motor skills, sensory play, and toy guides — short, useful, and made
-            for busy parents
-          </p>
-          <form>
-            <input type="email" placeholder="Enter your email" aria-label="Email address" />
-            <button type="submit">Subscribe</button>
-          </form>
-        </div>
-      </section>
+      <ChildDevelopmentCta />
 
       <Footer />
     </main>

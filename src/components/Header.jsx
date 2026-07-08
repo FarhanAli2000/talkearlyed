@@ -31,7 +31,7 @@ function Header() {
         <a className="site-logo" href="#home" aria-label="Talk Early home">
           <img
             className="site-logo__image"
-            src="/images/Link%20-%20Talk%20Early%20Ed%20home.svg"
+            src="/images/logomain.svg"
             alt="Talk Early"
           />
         </a>

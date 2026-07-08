@@ -50,19 +50,22 @@ function LatestArticles() {
           <div className="latest-articles__heading">
             <p className="latest-articles__eyebrow">Latest Article</p>
             <h2>
-              Fresh <span>guidance</span> for LA families.
+              Fresh <span>guidance</span> for LA <br />
+              families.
             </h2>
           </div>
 
-          <p className="latest-articles__intro">
-            New guides, local tips, and early-education updates, straight to the
-            point
-          </p>
+          <div className="latest-articles__actions">
+            <p className="latest-articles__intro">
+              New guides, local tips, and early-education updates, <br />
+              straight to the point
+            </p>
 
-          <a className="latest-articles__view-all" href="#parenting">
-            View All
-            <span aria-hidden="true">→</span>
-          </a>
+            <a className="latest-articles__view-all" href="#parenting">
+              View All
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
         </div>
 
         <div className="latest-articles__content">

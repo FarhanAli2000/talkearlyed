@@ -10,6 +10,7 @@ import LatestArticles from "../components/LatestArticles";
 import Animation from "../components/Animation";
 import OurAuthors from "../components/OurAuthors";
 import HomeLA from "../components/HomeLA";
+import HomeCta from "../components/HomeCta";
 import Footer from "../components/Footer";
 
 function Home() {
@@ -27,6 +28,7 @@ function Home() {
       <Animation />
       <OurAuthors />
       <HomeLA />
+      <HomeCta />
       <Footer />
     </main>
   );

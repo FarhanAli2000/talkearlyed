@@ -30,8 +30,6 @@ const footerColumns = [
   {
     title: "Useful Links",
     links: [
-      { label: "About Us", href: "#about" },
-      { label: "Contact Us", href: "#contact" },
       { label: "Cookies Policy", href: "#cookies-policy" },
       { label: "Disclaimer", href: "#disclaimer" },
       { label: "Privacy Policy", href: "#privacy" },

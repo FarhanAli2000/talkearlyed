@@ -1,3 +1,5 @@
+import Description from "./Styling";
+
 const clarityPoints = [
   "Local guides for L.A, Pasadena, Santa Monica, the South Bay, and beyond",
   "Plain-English explainers for TK, preschool readiness, speech, and autism",
@@ -14,11 +16,11 @@ function ClaritySection() {
             <span>Less searching.</span>
             More clarity.
           </h2>
-          <p className="clarity-copy__intro">
+          <Description className="clarity-copy__intro">
             Most early-education advice is generic, overwhelming, or trying to
             sell you something. We do the opposite, clear local guidance that
             ends with a next step, not another open tab.
-          </p>
+          </Description>
 
           <ul className="clarity-list">
             {clarityPoints.map((point, index) => (
@@ -32,7 +34,7 @@ function ClaritySection() {
                   alt=""
                   aria-hidden="true"
                 />
-                <span>{point}</span>
+                <span className="clarity-list__text description-text">{point}</span>
               </li>
             ))}
           </ul>

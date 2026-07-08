@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import SpecialHero from "../components/SpecialHero";
 import SpecialSecond from "../components/SpecialSecond";
 import SpecialFaqs from "../components/SpecialFaqs";
+import ParentingNewsletter from "../components/ParentingNewsletter";
 import Footer from "../components/Footer";
 
 function SpecialNeeds() {
@@ -12,20 +13,7 @@ function SpecialNeeds() {
       <SpecialSecond />
       <SpecialFaqs />
 
-      <section className="parenting-newsletter">
-        <div className="parenting-newsletter__card">
-          <span>Parent Newsletter</span>
-          <h2>Subscribe for Parenting Tips</h2>
-          <p>
-            Preschool checklists, TK reminders, and local guides, short,
-            useful, and made for busy parents
-          </p>
-          <form>
-            <input type="email" placeholder="Enter your email" aria-label="Email address" />
-            <button type="submit">Subscribe</button>
-          </form>
-        </div>
-      </section>
+      <ParentingNewsletter sectionClassName="home-cta" />
 
       <Footer />
     </main>

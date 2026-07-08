@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import ParentingCta from "../components/ParentingCta";
 
 const posts = [
   {
@@ -333,20 +334,7 @@ function Parenting() {
         </div>
       </section>
 
-      <section className="parenting-newsletter">
-        <div className="parenting-newsletter__card">
-          <span>Parent Newsletter</span>
-          <h2>Subscribe for Parenting Tips</h2>
-          <p>
-            Preschool checklists, TK reminders, and local guides, short,
-            useful, and made for busy parents
-          </p>
-          <form>
-            <input type="email" placeholder="Enter your email" aria-label="Email address" />
-            <button type="submit">Subscribe</button>
-          </form>
-        </div>
-      </section>
+      <ParentingCta />
 
       <Footer />
     </main>

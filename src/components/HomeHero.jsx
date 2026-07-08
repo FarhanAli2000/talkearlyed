@@ -1,3 +1,5 @@
+import Description, { CardDes, cardDesClass } from "./Styling";
+
 const cards = [
   {
     title: "Pick a preschool with confidence",
@@ -45,11 +47,11 @@ function HomeHero() {
           <span>Early Childhood Education</span>
         </h1>
 
-        <p className="home-hero__copy">
+        <Description className="home-hero__copy">
           From your first preschool tour to your child's first words, we help
           you find the right early-education support near you, written for
           parents across Los Angeles
-        </p>
+        </Description>
 
         <div className="home-hero__actions">
           <a className="hero-button hero-button--primary" href="#resources">
@@ -67,8 +69,8 @@ function HomeHero() {
             <article className={`resource-card ${card.className}`} key={card.title}>
               <div className="resource-card__body">
                 <h2>{card.title}</h2>
-                <p>{card.text}</p>
-                <a href="#learn-more">
+                <CardDes>{card.text}</CardDes>
+                <a className={cardDesClass} href="#learn-more">
                   Learn More
                   <span aria-hidden="true">→</span>
                 </a>

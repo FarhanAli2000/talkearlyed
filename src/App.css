@@ -14,6 +14,47 @@ body {
   overflow-x: hidden;
 }
 
+:root {
+  --site-text-font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --site-text-font-size: 16px;
+  --site-text-font-weight: 400;
+  --site-text-line-height: 150%;
+  --site-text-letter-spacing: 0;
+  --card-des-font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --card-des-font-size: 13px;
+  --card-des-font-weight: 400;
+  --card-des-line-height: 150%;
+  --card-des-letter-spacing: 0;
+  --card-des-max-width: 257.25px;
+  --color-5: #100d21;
+}
+
+.description-text {
+  max-width: 627px;
+  margin: 0 auto;
+  font-family: var(--site-text-font-family);
+  font-size: var(--site-text-font-size);
+  font-weight: var(--site-text-font-weight);
+  line-height: var(--site-text-line-height);
+  letter-spacing: var(--site-text-letter-spacing);
+  text-align: center;
+}
+
+.card-des {
+  font-family: var(--card-des-font-family);
+  font-size: var(--card-des-font-size);
+  font-weight: var(--card-des-font-weight);
+  line-height: var(--card-des-line-height);
+  letter-spacing: var(--card-des-letter-spacing);
+  color: inherit;
+}
+
+p.card-des {
+  max-width: var(--card-des-max-width);
+  min-height: 54px;
+  margin: 17px 0 0;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -1027,6 +1068,11 @@ a {
   font-size: 15px;
   font-weight: 700;
   line-height: 1.25;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .parenting-card p:not(.parenting-card__date) {
@@ -1035,6 +1081,11 @@ a {
   font-size: 11px;
   font-weight: 400;
   line-height: 1.6;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .parenting-card__link {
@@ -1392,12 +1443,45 @@ a.related-card:focus-visible {
   overflow: hidden;
   border-radius: 28px;
   padding: 45px 40px 48px;
-  background:
-    radial-gradient(circle at -4% -3%, rgba(255, 255, 255, 0.35) 0 12%, transparent 13%),
-    radial-gradient(circle at 103% 88%, rgba(255, 255, 255, 0.28) 0 15%, transparent 16%),
-    linear-gradient(135deg, #ffc520 0%, #ffb32f 42%, #ff8b3d 100%);
+  background: linear-gradient(135deg, #ffc520 0%, #ffb32f 42%, #ff8b3d 100%);
   text-align: center;
   color: #10102a;
+}
+
+.parenting-newsletter__ring {
+  position: absolute;
+  z-index: 0;
+  width: 150px;
+  height: auto;
+  pointer-events: none;
+  opacity: 0.55;
+  transform: rotate(180deg);
+}
+
+.parenting-newsletter__ring--top {
+  top: -68px;
+  left: -34px;
+}
+
+.parenting-newsletter__ring--bottom {
+  right: -34px;
+  bottom: -34px;
+  transform: rotate(0deg);
+}
+
+.parenting-newsletter__pipa {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  width: min(46%, 240px);
+  height: auto;
+  pointer-events: none;
+}
+
+.parenting-newsletter__card > :not(.parenting-newsletter__ring):not(.parenting-newsletter__pipa) {
+  position: relative;
+  z-index: 1;
 }
 
 .parenting-newsletter__card span {
@@ -1420,6 +1504,75 @@ a.related-card:focus-visible {
   font-size: clamp(34px, 4vw, 48px);
   font-weight: 700;
   line-height: 1;
+}
+
+.home-cta .parenting-newsletter__card h2,
+.los-angeles-cta .parenting-newsletter__card h2,
+.parenting-cta .parenting-newsletter__card h2,
+.child-development-cta .parenting-newsletter__card h2,
+.early-edu-cta .parenting-newsletter__card h2,
+.recommendation-cta .parenting-newsletter__card h2 {
+  max-width: 615.87px;
+  margin: 18px auto 0;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: clamp(34px, 5.2vw, 62.24px);
+  font-weight: 700;
+  line-height: 56.01px;
+  letter-spacing: -2.8px;
+  text-align: center;
+}
+
+.home-cta .parenting-newsletter__card,
+.los-angeles-cta .parenting-newsletter__card,
+.parenting-cta .parenting-newsletter__card,
+.child-development-cta .parenting-newsletter__card,
+.early-edu-cta .parenting-newsletter__card,
+.recommendation-cta .parenting-newsletter__card {
+  width: min(100%, 960px);
+}
+
+.home-cta .parenting-newsletter__card p,
+.los-angeles-cta .parenting-newsletter__card p,
+.parenting-cta .parenting-newsletter__card p,
+.child-development-cta .parenting-newsletter__card p,
+.early-edu-cta .parenting-newsletter__card p,
+.recommendation-cta .parenting-newsletter__card p {
+  max-width: 551.04px;
+  margin: 16px auto 0;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 12.97px;
+  font-weight: 400;
+  line-height: 21.78px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.home-cta .parenting-newsletter__card input,
+.los-angeles-cta .parenting-newsletter__card input,
+.parenting-cta .parenting-newsletter__card input,
+.child-development-cta .parenting-newsletter__card input,
+.early-edu-cta .parenting-newsletter__card input,
+.recommendation-cta .parenting-newsletter__card input {
+  font-family: Arial, sans-serif;
+  font-size: 12.97px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.home-cta .parenting-newsletter__card input::placeholder,
+.los-angeles-cta .parenting-newsletter__card input::placeholder,
+.parenting-cta .parenting-newsletter__card input::placeholder,
+.child-development-cta .parenting-newsletter__card input::placeholder,
+.early-edu-cta .parenting-newsletter__card input::placeholder,
+.recommendation-cta .parenting-newsletter__card input::placeholder {
+  font-family: Arial, sans-serif;
+  font-size: 12.97px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+  color: #757575;
+  opacity: 1;
 }
 
 .parenting-newsletter__card p {
@@ -1648,7 +1801,7 @@ a.related-card:focus-visible {
 
 .site-header {
   width: 100%;
-  height: 64px;
+  height: 68px;
   background: #d1ced6;
   position: sticky;
   top: 0;
@@ -1698,7 +1851,7 @@ a.related-card:focus-visible {
   width: min(100%, 970px);
   height: 100%;
   margin: 0 auto;
-  padding: 0 26px;
+  padding: 0 10px;
   gap: 64px;
 }
 
@@ -1707,14 +1860,15 @@ a.related-card:focus-visible {
   align-items: center;
   justify-content: center;
   flex: 0 0 auto;
-  width: 70px;
-  height: 58px;
+  width: 96px;
+  height: 76px;
+  padding-top: 4px;
 }
 
 .site-logo__image {
   display: block;
-  width: 70px;
-  height: 58px;
+  width: 96px;
+  height: 76px;
   object-fit: contain;
 }
 
@@ -1724,8 +1878,8 @@ a.related-card:focus-visible {
   justify-content: flex-end;
   gap: 31px;
   min-width: 0;
-  font-family: "Trebuchet MS", Arial, sans-serif;
-  font-size: 10px;
+  font-family: var(--site-text-font-family);
+  font-size: 12px;
   font-weight: 700;
   line-height: 100%;
   letter-spacing: 0;
@@ -1743,7 +1897,7 @@ a.related-card:focus-visible {
   align-items: center;
   justify-content: center;
   gap: 6px;
-  height: 18px;
+  height: 20px;
   white-space: nowrap;
   transition: color 160ms ease;
 }
@@ -1793,7 +1947,7 @@ a.related-card:focus-visible {
   padding: 0 12px;
   border-radius: 6px;
   color: #15152b;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   line-height: 1;
   white-space: nowrap;
@@ -1870,11 +2024,10 @@ a.related-card:focus-visible {
 }
 
 .home-hero__copy {
-  max-width: 680px;
+  max-width: 627px;
   margin: 19px auto 0;
   color: rgba(255, 255, 255, 0.92);
-  font-size: 17px;
-  line-height: 1.38;
+  text-align: center;
 }
 
 .home-hero__actions {
@@ -1961,21 +2114,17 @@ a.related-card:focus-visible {
   letter-spacing: 0;
 }
 
-.resource-card p {
-  max-width: 275px;
+.resource-card p.card-des {
+  max-width: var(--card-des-max-width);
+  min-height: 54px;
   margin: 17px 0 0;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1.42;
 }
 
-.resource-card a {
+.resource-card a.card-des {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   margin-top: 18px;
-  font-size: 12px;
-  font-weight: 700;
 }
 
 .resource-card img {
@@ -2908,15 +3057,13 @@ a.related-card:focus-visible {
   color: #794cff;
 }
 
-.location-card p {
+.location-card__copy {
   position: relative;
   z-index: 1;
   max-width: 412px;
   margin: 24px 0 0;
   color: #7a758c;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1.55;
+  text-align: left;
 }
 
 .location-pills {
@@ -3020,9 +3167,7 @@ a.related-card:focus-visible {
   max-width: 430px;
   margin: 32px 0 0;
   color: #4f4b62;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1.45;
+  text-align: left;
 }
 
 .clarity-list {
@@ -3038,9 +3183,12 @@ a.related-card:focus-visible {
   align-items: center;
   gap: 9px;
   color: #4f4b62;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1.35;
+}
+
+.clarity-list__text {
+  text-align: left;
+  max-width: none;
+  margin: 0;
 }
 
 .clarity-list img {
@@ -3868,6 +4016,10 @@ a.related-card:focus-visible {
   object-fit: cover;
 }
 
+.difference-card--local .difference-card__photo {
+  bottom: 10px;
+}
+
 .difference-squiggle {
   position: absolute;
   left: -28px;
@@ -4057,10 +4209,18 @@ a.related-card:focus-visible {
 
 .latest-articles__header {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(220px, 0.9fr) auto;
+  grid-template-columns: minmax(0, 1.1fr) auto;
   gap: 24px 32px;
   align-items: end;
   margin-bottom: 36px;
+}
+
+.latest-articles__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  max-width: 260px;
 }
 
 .latest-articles__eyebrow {
@@ -4089,25 +4249,26 @@ a.related-card:focus-visible {
 }
 
 .latest-articles__intro {
-  max-width: 280px;
-  margin: 0 0 8px;
+  max-width: 250px;
+  margin: 0;
   color: #6f687c;
-  font-size: 12px;
-  line-height: 1.55;
+  font-size: 10px;
+  line-height: 1.4;
+  text-align: right;
 }
 
 .latest-articles__view-all {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  min-width: 118px;
-  min-height: 40px;
-  padding: 0 20px;
+  gap: 7px;
+  min-width: 96px;
+  min-height: 32px;
+  padding: 0 14px;
   border-radius: 999px;
   background: #794cff;
   color: #ffffff;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 700;
   line-height: 1;
   box-shadow: 0 10px 22px rgba(121, 76, 255, 0.28);
@@ -4281,7 +4442,7 @@ a.related-card:focus-visible {
   max-width: 244px;
   margin: 14px 0 0;
   color: #6a7286;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.55;
 }
 
@@ -4296,7 +4457,7 @@ a.related-card:focus-visible {
 .site-footer__column h2 {
   margin: 0 0 20px;
   color: #25283a;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1;
 }
@@ -4311,7 +4472,7 @@ a.related-card:focus-visible {
 
 .site-footer__column a {
   color: #6a7286;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.2;
   transition: color 160ms ease;
 }
@@ -4334,7 +4495,7 @@ a.related-card:focus-visible {
 .site-footer__bottom p {
   margin: 0;
   color: #6a7286;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.2;
   text-align: center;
 }
@@ -4373,7 +4534,7 @@ a.related-card:focus-visible {
 
 .site-footer__legal a {
   color: #596176;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.2;
   white-space: nowrap;
   transition: color 160ms ease;
@@ -4494,7 +4655,7 @@ a.related-card:focus-visible {
   .main-nav__dropdown-link {
     min-height: 40px;
     padding-left: 0;
-    font-size: 11px;
+    font-size: 13px;
   }
 
   .blog-detail-intro {
@@ -4911,8 +5072,13 @@ a.related-card:focus-visible {
     gap: 18px;
   }
 
+  .latest-articles__actions {
+    align-items: flex-start;
+  }
+
   .latest-articles__intro {
     max-width: none;
+    text-align: left;
   }
 
   .latest-articles__content {
@@ -5311,6 +5477,29 @@ a.related-card:focus-visible {
 
   .parenting-newsletter__card h2 {
     font-size: 31px;
+  }
+
+  .home-cta .parenting-newsletter__card h2,
+  .los-angeles-cta .parenting-newsletter__card h2,
+  .parenting-cta .parenting-newsletter__card h2,
+  .child-development-cta .parenting-newsletter__card h2,
+  .early-edu-cta .parenting-newsletter__card h2,
+.recommendation-cta .parenting-newsletter__card h2 {
+    max-width: 100%;
+    font-size: 31px;
+    line-height: 1.05;
+    letter-spacing: -1.4px;
+  }
+
+  .home-cta .parenting-newsletter__card p,
+  .los-angeles-cta .parenting-newsletter__card p,
+  .parenting-cta .parenting-newsletter__card p,
+  .child-development-cta .parenting-newsletter__card p,
+  .early-edu-cta .parenting-newsletter__card p,
+.recommendation-cta .parenting-newsletter__card p {
+    max-width: 100%;
+    font-size: 11px;
+    line-height: 1.65;
   }
 
   .parenting-newsletter__card form {
@@ -5819,4 +6008,106 @@ a.related-card:focus-visible {
     flex-wrap: wrap;
     justify-content: center;
   }
+}
+
+/* Shared description typography — Inter site-wide (from Styling.jsx) */
+.description-text,
+.location-card__copy,
+.clarity-copy__intro,
+.clarity-list__text,
+.home-hero__copy,
+.about-hero__copy,
+.parenting-hero__copy,
+.decision-heading .decision-heading__copy,
+.decision-card p,
+.home-guidance__copy p,
+.our-authors__copy,
+.home-la__copy,
+.home-la__feature p,
+.directory-card__copy,
+.contact-form-section__copy p,
+.about-security__copy p:not(.about-security__eyebrow),
+.about-network p,
+.about-feature__text,
+.about-design__text,
+.about-color__text,
+.about-light__text,
+.about-sustainable__text,
+.about-transform__text,
+.author-profile__bio,
+.author-profile__role,
+.latest-articles__intro,
+.latest-articles__featured p,
+.latest-articles__item p,
+.los-second-card p,
+.special-second-card p,
+.recommend-second-card p,
+.parenting-newsletter__card p,
+.home-cta .parenting-newsletter__card p,
+.los-angeles-cta .parenting-newsletter__card p,
+.parenting-cta .parenting-newsletter__card p,
+.child-development-cta .parenting-newsletter__card p,
+.early-edu-cta .parenting-newsletter__card p,
+.recommendation-cta .parenting-newsletter__card p,
+.difference-copy > p:not(.difference-eyebrow),
+.difference-card p,
+.parenting-card p:not(.parenting-card__date),
+.parenting-side-block p:not(.parenting-side-block__eyebrow),
+.related-card p,
+.faq-item p,
+.blog-detail-card__excerpt,
+.blog-article-section p,
+.blog-article-section li,
+.blog-article__inner > p,
+.blog-article-faq details p,
+.blog-article-quote p {
+  font-family: var(--site-text-font-family);
+  font-size: var(--site-text-font-size);
+  font-weight: var(--site-text-font-weight);
+  line-height: var(--site-text-line-height);
+  letter-spacing: var(--site-text-letter-spacing);
+}
+
+/* Card descriptions keep CardDes sizing */
+.card-des,
+.resource-card .card-des,
+.resource-card a.card-des {
+  font-family: var(--card-des-font-family);
+  font-size: var(--card-des-font-size);
+  font-weight: var(--card-des-font-weight);
+  line-height: var(--card-des-line-height);
+  letter-spacing: var(--card-des-letter-spacing);
+  color: inherit;
+}
+
+.resource-card p.card-des {
+  max-width: var(--card-des-max-width);
+  min-height: 54px;
+  margin: 17px 0 0;
+}
+
+.button-text,
+.hero-button,
+.decision-card a,
+.home-la__button,
+.los-second-card__button,
+.about-feature__button,
+.about-design__button,
+.about-color__button,
+.about-light__button,
+.about-sustainable__button,
+.about-transform__button,
+.clarity-button,
+.latest-articles__view-all,
+.latest-articles__featured a,
+.latest-articles__item a,
+.parenting-newsletter__card button,
+.directory-pill,
+.location-pills a,
+.blog-detail-card__link {
+  font-family: var(--site-text-font-family);
+  font-size: var(--site-text-font-size);
+  font-weight: var(--site-text-font-weight);
+  line-height: var(--site-text-line-height);
+  letter-spacing: var(--site-text-letter-spacing);
 }

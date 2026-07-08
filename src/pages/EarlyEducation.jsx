@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import EarlyEduCta from "../components/EarlyEduCta";
 
 const posts = [
   {
@@ -187,20 +188,7 @@ function EarlyEducation() {
         </div>
       </section>
 
-      <section className="parenting-newsletter">
-        <div className="parenting-newsletter__card">
-          <span>Early Education Newsletter</span>
-          <h2>Subscribe for Learning Tips</h2>
-          <p>
-            Sensory play ideas, craft activities, and toy guides — short,
-            useful, and made for busy parents
-          </p>
-          <form>
-            <input type="email" placeholder="Enter your email" aria-label="Email address" />
-            <button type="submit">Subscribe</button>
-          </form>
-        </div>
-      </section>
+      <EarlyEduCta />
 
       <Footer />
     </main>

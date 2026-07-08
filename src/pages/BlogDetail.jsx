@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import ParentingNewsletter from "../components/ParentingNewsletter";
 
 const linkedText = (text, links) => ({ text, links });
 
@@ -5828,20 +5829,11 @@ function BlogDetailSidebar({ currentSlug }) {
 
 function BlogDetailNewsletter() {
   return (
-    <section className="blog-detail-newsletter parenting-newsletter">
-      <div className="parenting-newsletter__card">
-        <span>Newsletter</span>
-        <h2>Subscribe for Parenting Tips</h2>
-        <p>
-          Get practical early-education guidance, local resources, and expert
-          parenting tips delivered to your inbox.
-        </p>
-        <form onSubmit={(event) => event.preventDefault()}>
-          <input type="email" placeholder="Enter your email" aria-label="Email" />
-          <button type="submit">Subscribe</button>
-        </form>
-      </div>
-    </section>
+    <ParentingNewsletter
+      badge="Newsletter"
+      description="Get practical early-education guidance, local resources, and expert parenting tips delivered to your inbox."
+      sectionClassName="blog-detail-newsletter"
+    />
   );
 }
 
