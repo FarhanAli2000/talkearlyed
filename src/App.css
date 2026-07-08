@@ -3907,12 +3907,8 @@ a.related-card:focus-visible {
   margin: 0 auto;
   overflow: hidden;
   border-radius: 38px;
-  background:
-    radial-gradient(circle at 109% 123%, rgba(127, 98, 239, 0.55) 0 28%, transparent 29%),
-    linear-gradient(135deg, #6e42ed 0%, #6032d4 47%, #4f25bd 100%);
-  box-shadow:
-    0 30px 54px rgba(91, 52, 210, 0.42),
-    0 0 44px rgba(121, 76, 255, 0.24);
+  background: #6a3fe8;
+  color: #ffffff;
 }
 
 .directory-card__content {
@@ -3925,6 +3921,8 @@ a.related-card:focus-visible {
 .directory-eyebrow-wrap {
   position: relative;
   display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
   margin-bottom: 15px;
 }
 
@@ -3938,25 +3936,19 @@ a.related-card:focus-visible {
   line-height: 1;
 }
 
-.directory-eyebrow-wrap::before,
-.directory-eyebrow-wrap::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -7px;
-  height: 4px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.86);
-  transform: rotate(-5deg);
+.directory-eyebrow__script {
+  font-family: "Brush Script MT", "Segoe Script", "Snell Roundhand", cursive;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.directory-eyebrow-wrap::before {
-  width: 37px;
-}
-
-.directory-eyebrow-wrap::after {
-  left: 68px;
-  width: 40px;
+.directory-eyebrow__underline {
+  display: block;
+  width: 118px;
+  height: auto;
+  margin-top: 4px;
+  opacity: 0.72;
 }
 
 .directory-card h2 {
@@ -3992,64 +3984,51 @@ a.related-card:focus-visible {
   align-items: center;
   justify-content: center;
   min-height: 36px;
-  padding: 0 13px;
-  border-radius: 13px;
+  padding: 0 16px;
+  border-radius: 999px;
   background: #ffffff;
   color: #202038;
   font-size: 12px;
   font-weight: 700;
   line-height: 1;
   white-space: nowrap;
-  box-shadow: 0 10px 24px rgba(30, 15, 86, 0.16);
-  transition:
-    transform 160ms ease,
-    box-shadow 160ms ease;
+  transition: transform 160ms ease;
 }
 
 .directory-pill:hover,
 .directory-pill:focus-visible {
   transform: translateY(-2px);
-  box-shadow: 0 14px 28px rgba(30, 15, 86, 0.22);
 }
 
 .directory-visual {
   position: absolute;
   z-index: 2;
-  top: 68px;
-  right: 31px;
-  width: 356px;
-  height: 135px;
+  top: 50%;
+  right: 34px;
+  width: min(46%, 390px);
+  transform: translateY(-50%);
 }
 
 .directory-illustration {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: contain;
-  opacity: 0.2;
+  opacity: 0.92;
+  filter: brightness(0) invert(1);
 }
 
 .directory-ring {
   position: absolute;
+  z-index: 1;
+  right: -118px;
+  bottom: -210px;
+  width: 360px;
+  height: auto;
   pointer-events: none;
   display: block;
   object-fit: contain;
-  opacity: 1;
-}
-
-.directory-ring--outer {
-  right: -124px;
-  bottom: -218px;
-  width: 364px;
-  height: 364px;
-}
-
-.directory-ring--inner {
-  right: -82px;
-  bottom: -176px;
-  width: 278px;
-  height: 278px;
-  opacity: 0.58;
+  opacity: 0.38;
 }
 
 .latest-articles {
@@ -4144,16 +4123,43 @@ a.related-card:focus-visible {
 
 .latest-articles__media {
   position: relative;
+  display: block;
   width: 100%;
   min-height: 280px;
+  overflow: hidden;
   border-radius: 18px;
   background: #4f4f57;
+}
+
+.latest-articles__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  object-fit: cover;
 }
 
 .latest-articles__media--small {
   flex: 0 0 132px;
   width: 132px;
   min-height: 108px;
+}
+
+.latest-articles__media--small img {
+  min-height: 108px;
+}
+
+.latest-articles__featured h3 a,
+.latest-articles__item h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.latest-articles__featured h3 a:hover,
+.latest-articles__item h3 a:hover,
+.latest-articles__featured a:hover,
+.latest-articles__item a:hover {
+  color: #6032d4;
 }
 
 .latest-articles__tag {
@@ -4934,9 +4940,10 @@ a.related-card:focus-visible {
 
   .directory-visual {
     top: 42px;
-    right: -38px;
-    width: 315px;
-    opacity: 0.42;
+    right: -20px;
+    width: 300px;
+    transform: none;
+    opacity: 0.55;
   }
 
   .site-footer {
@@ -5748,19 +5755,16 @@ a.related-card:focus-visible {
 
   .directory-visual {
     top: 18px;
-    right: -135px;
-    width: 330px;
-    opacity: 0.25;
+    right: -120px;
+    width: 280px;
+    transform: none;
+    opacity: 0.35;
   }
 
-  .directory-ring--outer {
-    right: -170px;
-    bottom: -206px;
-  }
-
-  .directory-ring--inner {
-    right: -134px;
-    bottom: -170px;
+  .directory-ring {
+    right: -88px;
+    bottom: -156px;
+    width: 260px;
   }
 
   .site-footer {

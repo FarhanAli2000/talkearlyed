@@ -1,10 +1,10 @@
 const directoryCategories = [
-  "Preschools",
-  "Daycares",
-  "Speech Therapy",
-  "Autism Support",
-  "Summer Camps",
-  "Tutors",
+  { label: "Preschools", href: "#preschool-lists" },
+  { label: "Daycares", href: "#los-angeles-resources" },
+  { label: "Speech Therapy", href: "#special-needs" },
+  { label: "Autism Support", href: "#special-needs" },
+  { label: "Summer Camps", href: "#recommendations" },
+  { label: "Tutors", href: "#recommendations" },
 ];
 
 function LocalDirectoryCTA() {
@@ -13,7 +13,15 @@ function LocalDirectoryCTA() {
       <div className="directory-card">
         <div className="directory-card__content">
           <div className="directory-eyebrow-wrap">
-            <p className="directory-eyebrow">LA Directory</p>
+            <p className="directory-eyebrow">
+              <span className="directory-eyebrow__script">LA</span> Directory
+            </p>
+            <img
+              className="directory-eyebrow__underline"
+              src="/images/Layer_1-2.png"
+              alt=""
+              aria-hidden="true"
+            />
           </div>
 
           <h2>
@@ -29,12 +37,8 @@ function LocalDirectoryCTA() {
 
           <div className="directory-pills" aria-label="Resource categories">
             {directoryCategories.map((category) => (
-              <a
-                className="directory-pill"
-                href={`#${category.toLowerCase().replaceAll(" ", "-")}`}
-                key={category}
-              >
-                {category}
+              <a className="directory-pill" href={category.href} key={category.label}>
+                {category.label}
               </a>
             ))}
           </div>
@@ -49,14 +53,8 @@ function LocalDirectoryCTA() {
         </div>
 
         <img
-          className="directory-ring directory-ring--outer"
+          className="directory-ring"
           src="/images/err.png"
-          alt=""
-          aria-hidden="true"
-        />
-        <img
-          className="directory-ring directory-ring--inner"
-          src="/images/text2.png"
           alt=""
           aria-hidden="true"
         />

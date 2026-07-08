@@ -1,32 +1,37 @@
 const featuredArticle = {
   tag: "Tips",
-  title: "The Importance of Reading: How to Encourage Kids to Love Books",
+  title:
+    "Crafts for Kids: Easy, Creative, and Educational Activities For Every Age",
   description:
-    "Simple tips to inspire a love for books in kids, from creating a cozy reading nook to choosing stories that match their interests.",
-  href: "#parenting",
+    "Fun, hands-on craft ideas that build creativity, fine motor skills, and early learning through play.",
+  image: "/images/WhatsApp-Image-2026-06-16-at-4.41.23-PM.webp",
+  href: "#crafts-for-kids",
 };
 
 const articles = [
   {
     tag: "Blog",
-    title: "Quick Exercises to Boost Focus and Memory in Kids",
+    title: "Outdoor Sensory Play Ideas for Babies and Toddlers",
     description:
-      "These activities are designed to be engaging, easy to do, and perfect for kids of all ages.",
-    href: "#parenting",
+      "The best outdoor sensory play ideas for babies and toddlers that are fun, safe, and developmentally enriching.",
+    image: "/images/blog10.webp",
+    href: "#outdoor-sensory-play-ideas-for-babies-and-toddlers",
   },
   {
     tag: "News",
-    title: "Crafts That Teach and Entertain at the Same Time",
+    title: "Indoor Sensory Activities for Infants During Rainy Days",
     description:
-      "These projects teach essential skills like problem-solving, math, and geography.",
-    href: "#parenting",
+      "Practical indoor sensory activities for infants to keep them engaged and support development on rainy days.",
+    image: "/images/featued-1-1.webp",
+    href: "#indoor-sensory-activities-for-infants-during-rainy-days",
   },
   {
     tag: "Blog",
-    title: "Why Kids Learn Best When They're Having a Blast",
+    title: "Learning Toys for 4-Year-Olds: A Complete Guide to Smart, Fun Play",
     description:
-      "Discover how play, laughter, and engaging activities activate young minds.",
-    href: "#parenting",
+      "Smart, fun learning toys that support creativity, problem-solving, and kindergarten readiness.",
+    image: "/images/ted-blog-8-1.webp",
+    href: "#learning-toys-for-4-year-olds",
   },
 ];
 
@@ -62,10 +67,13 @@ function LatestArticles() {
 
         <div className="latest-articles__content">
           <article className="latest-articles__featured">
-            <div className="latest-articles__media">
+            <a className="latest-articles__media" href={featuredArticle.href}>
+              <img src={featuredArticle.image} alt="" />
               <span className="latest-articles__tag">{featuredArticle.tag}</span>
-            </div>
-            <h3>{featuredArticle.title}</h3>
+            </a>
+            <h3>
+              <a href={featuredArticle.href}>{featuredArticle.title}</a>
+            </h3>
             <p>{featuredArticle.description}</p>
             <a href={featuredArticle.href}>Read More &gt;</a>
           </article>
@@ -73,11 +81,17 @@ function LatestArticles() {
           <div className="latest-articles__list">
             {articles.map((article) => (
               <article className="latest-articles__item" key={article.title}>
-                <div className="latest-articles__media latest-articles__media--small">
+                <a
+                  className="latest-articles__media latest-articles__media--small"
+                  href={article.href}
+                >
+                  <img src={article.image} alt="" />
                   <span className="latest-articles__tag">{article.tag}</span>
-                </div>
+                </a>
                 <div className="latest-articles__item-copy">
-                  <h3>{article.title}</h3>
+                  <h3>
+                    <a href={article.href}>{article.title}</a>
+                  </h3>
                   <p>{article.description}</p>
                   <a href={article.href}>Read More &gt;</a>
                 </div>
