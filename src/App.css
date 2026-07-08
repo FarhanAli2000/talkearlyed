@@ -1289,6 +1289,18 @@ a.related-card:focus-visible {
   text-decoration: none;
 }
 
+.recommendations-page {
+  overflow-x: hidden;
+}
+
+.recommendations-hero {
+  background-position: center 35%;
+}
+
+.recommend-second__main {
+  min-width: 0;
+}
+
 .los-second__cards {
   display: grid;
   gap: 22px;
@@ -2187,7 +2199,7 @@ a.related-card:focus-visible {
 
 .about-hero {
   position: relative;
-  min-height: calc(100vh - 64px);
+  min-height: calc(100vh - 68px);
   overflow: hidden;
   background-position: center 41%;
   background-size: cover;
@@ -2206,7 +2218,7 @@ a.related-card:focus-visible {
   position: relative;
   z-index: 2;
   display: flex;
-  min-height: calc(100vh - 64px);
+  min-height: calc(100vh - 68px);
   width: min(100%, 920px);
   margin: 0 auto;
   padding: 148px 28px 116px;
@@ -3047,7 +3059,7 @@ a.related-card:focus-visible {
   z-index: 1;
   max-width: 355px;
   margin: 0;
-  font-size: clamp(42px, 5vw, 58px);
+  font-size: clamp(34px, 4vw, 46px);
   font-weight: 700;
   line-height: 0.9;
   letter-spacing: 0;
@@ -3933,14 +3945,16 @@ a.related-card:focus-visible {
 .difference-copy h2 {
   margin: 0;
   color: #110c24;
-  font-size: 31px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.3;
 }
 
 .difference-copy h2 span {
   display: block;
   color: #794cff;
+  font-weight: 700;
 }
 
 .difference-copy p:last-child {
@@ -4769,9 +4783,40 @@ a.related-card:focus-visible {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .recommendations-hero {
+    min-height: auto;
+  }
+
+  .recommendations-hero .about-hero__content {
+    min-height: 420px;
+    padding: 72px 20px 56px;
+  }
+
+  .recommend-second .parenting-blog__inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    width: 100%;
+    max-width: 720px;
+  }
+
+  .recommend-second .parenting-sidebar {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
   .parenting-sidebar {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 30px;
+  }
+
+  /* Recommendations page should stay single-column on mobile widths */
+  .recommend-second .parenting-sidebar {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .recommend-second .parenting-grid {
+    grid-template-columns: 1fr;
   }
 
   .parenting-faq__inner {
@@ -5584,6 +5629,68 @@ a.related-card:focus-visible {
     font-size: 14px;
   }
 
+  .recommendations-hero .about-hero__content {
+    min-height: 340px;
+    padding: 48px 18px 42px;
+  }
+
+  .recommendations-hero .about-hero__title {
+    font-size: 34px;
+    line-height: 1.02;
+  }
+
+  .recommendations-hero .about-hero__eyebrow {
+    font-size: 12px;
+  }
+
+  .recommendations-hero .about-hero__underline {
+    width: min(100%, 220px);
+    height: 10px;
+  }
+
+  .recommendations-hero .about-hero__decor {
+    display: none;
+  }
+
+  .recommend-second .parenting-blog {
+    padding: 42px 18px 30px;
+  }
+
+  .recommend-second .parenting-blog__inner {
+    gap: 32px;
+  }
+
+  .recommend-second .parenting-grid {
+    gap: 20px;
+    margin-top: 24px;
+  }
+
+  .recommend-second .parenting-sidebar {
+    gap: 24px;
+  }
+
+  .recommend-second .resource-link-card h3 {
+    flex-wrap: wrap;
+    row-gap: 6px;
+  }
+
+  .recommend-second .related-card h3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .recommend-second .related-card {
+    /* thumbnail aur text ke beech horizontal gap */
+    gap: 18px;
+  }
+
+  .recommend-faqs .parenting-faq__inner {
+    width: 100%;
+  }
+
   .about-security {
     padding: 48px 18px;
   }
@@ -5734,7 +5841,7 @@ a.related-card:focus-visible {
   }
 
   .location-card h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .location-pills {

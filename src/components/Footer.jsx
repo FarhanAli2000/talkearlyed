@@ -107,8 +107,8 @@ function Footer() {
             alt="Talk Early Ed"
           />
           <p>
-            Helping Los Angeles families find the right start for their little
-            learners
+            TalkEarlyEd is a trusted early learning resource helping Los Angeles
+            families make confident choices for their little learners.
           </p>
         </div>
 
